@@ -19,5 +19,5 @@ pub struct CliArgs {
         alias = "am",
         alias = "mass"
     )]
-    pub mass: f64,
+    pub mass: bool,
 }
