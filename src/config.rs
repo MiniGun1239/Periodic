@@ -11,13 +11,5 @@ pub struct CliArgs {
     )]
     pub number: u8,
 
-    #[arg(
-        long = "unified-mass",
-        short = 'm',
-        short_alias = 'u',
-        alias = "um",
-        alias = "am",
-        alias = "mass"
-    )]
-    pub mass: f64,
+    
 }
