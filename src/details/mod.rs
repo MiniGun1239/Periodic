@@ -18,7 +18,7 @@ pub fn get_database() -> HashMap<u8, Element> {
         Element {
             name: String::from("Hydrogen"),
             atomic_number: 1,
-            mass_number: 1.008
+            mass: 1.008
         }
     );
 
