@@ -1,8 +1,8 @@
 use std::collections::HashMap;
 
-pub mod model;
+pub mod element;
 
-use model::Element;
+use element::Element;
 
 pub fn lookup(atomic_number: u8) -> Option<Element> {
     let db = get_database();
