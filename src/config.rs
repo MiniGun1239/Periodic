@@ -5,8 +5,6 @@ use clap::Parser;
 pub struct CliArgs {
     #[arg(
         alias = "atomic-number",
-        alias = "an",
-        alias = "number"
     )]
     pub number: Option<u8>,
 
