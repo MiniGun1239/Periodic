@@ -4,8 +4,7 @@ use clap::Parser;
 #[clap(author, version, about, long_about = None)]
 pub struct CliArgs {
     #[arg(
-        long = "atomic-number",
-        short = 'n',
+        alias = "atomic-number",
         alias = "an",
         alias = "number"
     )]
