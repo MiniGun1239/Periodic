@@ -21,3 +21,8 @@ pub struct CliArgs {
     )]
     pub mass: bool,
 }
+
+pub fn parse_flags() -> CliArgs {
+    let args = CliArgs::parse();
+    args
+}
