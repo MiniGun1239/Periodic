@@ -9,7 +9,7 @@ pub struct CliArgs {
         alias = "an",
         alias = "number"
     )]
-    pub number: u8,
+    pub number: Option<u8>,
 
     #[arg(
         long = "unified-mass",
