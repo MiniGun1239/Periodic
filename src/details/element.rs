@@ -1,4 +1,6 @@
-#[derive(Default, Clone, Debug, PartialEq)]
+use serde::Deserialize;
+
+#[derive(Default, Clone, Debug, PartialEq, Deserialize)]
 pub struct Element {
     pub atomic_number: u8,
     pub name: String,
