@@ -6,3 +6,4 @@ authors = ["MiniGun1239"]
 
 [dependencies]
 clap = { version = "4.6.1", features = ["derive"] }
+serde = "1.0.228"

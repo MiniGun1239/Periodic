@@ -1,9 +1,9 @@
-use crate::electron::quantum_atomic_model::{get_full_config, get_shorthand_config};
-
 pub mod details;
 pub mod cli;
 pub mod output;
 pub mod electron;
+
+use crate::electron::quantum_model::configuration::{get_full, get_semantic};
 
 fn main() {
     let args = cli::parse::parse_flags();
@@ -16,9 +16,11 @@ fn main() {
         }
 
         if let Some(_string) = args.electron {
-            println!("Quantum Electronic Configuration: {}\n", get_full_config(num));
+            println!("Number of Electrons: {:?}", output::electron::number(num));
 
-            println!("Shorthand Configuration: {}", get_shorthand_config(num));
+            println!("Quantum Electronic Configuration: {}\n", get_full(num));
+
+            println!("Shorthand Configuration: {}", get_semantic(num));
         }
     }
 

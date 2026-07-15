@@ -1,21 +1,7 @@
-static ORBITALS: [(&str, u8); 29] = [
-    ("1s", 2),
-    ("2s", 2), ("2p", 6),
-    ("3s", 2), ("3p", 6),
-    ("4s", 2), ("3d", 10), ("4p", 6),
-    ("5s", 2), ("4d", 10), ("5p", 6),
-    ("6s", 2), ("4f", 14), ("5d", 10), ("6p", 6),
-    ("7s", 2), ("5f", 14), ("6d", 10), ("7p", 6),
-    ("8s", 2), ("5g", 18), ("6f", 14), ("7d", 10), ("8p", 6),
-    ("9s", 2), ("6g", 18), ("7f", 14), ("8d", 10), ("9p", 6),
-];
+use crate::electron::quantum_model::noble_gases::NOBLE_GASES;
+use crate::electron::quantum_model::orbitals::ORBITALS;
 
-static NOBLE_GASES: [(&str, u8); 7] = [
-    ("He", 2), ("Ne", 10), ("Ar", 18), ("Kr", 36),
-    ("Xe", 54), ("Rn", 86), ("Og", 118)
-];
-
-pub fn get_full_config(mut electrons:u8) -> String {
+pub fn get_full(mut electrons:u8) -> String {
     if electrons == 0 {
         return "No electrons".to_string();
     }
@@ -37,7 +23,7 @@ pub fn get_full_config(mut electrons:u8) -> String {
     parts.join(", ")
 }
 
-pub fn get_shorthand_config(mut electrons:u8) -> String {
+pub fn get_semantic(mut electrons:u8) -> String {
     if electrons == 0 {
         return "No electrons".to_string();
     }
