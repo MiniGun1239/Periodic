@@ -47,7 +47,7 @@ How an element interacts with other elements depends entirely on the spatial arr
 
 * **Electron Configuration**
     * ~~**Full Configuration**~~
-    * **Noble Gas Notation**
+    * ~~**Noble Gas Notation**~~
     * **Orbital Diagram**
 * **Valence Electrons**
     * **Count**
