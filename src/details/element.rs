@@ -19,7 +19,7 @@ pub struct Element {
     pub bohr_config: String,
     pub quantum_config: String,
     pub quantum_semantic_config: String,
-    pub block: char,
+    pub block: String,
 
     pub first_ionization_energy: f64,
     pub electron_affinity: f64,
