@@ -113,9 +113,7 @@ How the element behaves when exposed to various substances and environments.
     * **Acids & Bases:** Dissolution rates and gas evolution (e.g., Hydrogen gas release when reacting with hydrochloric acid).
     * **Halogens:** Synthesis of halides.
 * **Flammability & Combustion**
-    * Ignition temperature and the characteristic color of its flame (used in flame tests, e.g., Copper burns green/blue).
-* **Coordination Chemistry**
-    * Ability to act as a ligand or form complex coordination compounds (common among transition metals).
+    * Ignition temperature and the characteristic color of its flame
 
 ---
 
@@ -125,52 +123,13 @@ Where the element is found and its relative scarcity or frequency in the univers
 * **Cosmic Abundance**
     * Relative abundance in the universe (highly dominated by Hydrogen and Helium).
 * **Terrestrial Abundance**
-    * **Earth's Crust:** Parts per million (ppm) or weight percentage in the crustal rocks.
-    * **Oceans/Hydrosphere:** Concentration in seawater.
-    * **Atmosphere:** Volume percentage in Earth's air (e.g., Nitrogen $\approx 78\%$, Oxygen $\approx 21\%$).
-* **Natural Mineral Sources**
-    * The specific ores or minerals from which the element is commercially extracted (e.g., Bauxite for Aluminum, Cinnabar for Mercury).
+    * **Earth's Crust**
+    * **Oceans/Hydrosphere**
+    * **Atmosphere**
+* **Natural Mineral Sources (Ores)**
 
 ---
 
 ## VIII. History, Discovery, & Production
-The human connection, timeline, and modern industrial scaling of the element.
 
-* **Discovery Timeline**
-    * **Discoverer(s):** The scientist(s) or historical civilizations credited with isolating the element.
-    * **Discovery Year:** The date of first isolation, identification, or publication.
-    * **First Isolation Method:** The chemical or physical process used to extract the pure element for the first time.
-* **Industrial Production**
-    * **Extraction Process:** Modern industrial processes (e.g., Haber-Bosch process for Nitrogen, Hall-Héroult process for Aluminum).
-    * **Global Production Volume:** Tons produced annually worldwide.
-    * **Key Mining/Producing Regions:** Primary geographic locations where ores are mined or processed.
-
----
-
-## IX. Practical Applications & Technology
-How society utilizes the element in everyday life, manufacturing, and frontier technology.
-
-* **Commercial & Industrial Uses**
-    * Structural materials, alloys, chemical catalysts, electrical wiring, glass manufacturing, etc.
-* **High-Tech & Specialty Applications**
-    * Semiconductors, aerospace superalloys, lasers, nuclear reactors, superconductors, medical imaging (MRI contrast agents, PET scans).
-* **Historical Uses**
-    * Ancient or obsolete uses (e.g., Lead in pipes/paint, Mercury in felt hat production).
-
----
-
-## X. Biological Significance, Health, & Safety
-The element's relationship to living organisms and its safety profile.
-
-* **Biological Role**
-    * **Essential Element:** Is it required for life? (e.g., Iron in hemoglobin, Magnesium in chlorophyll).
-    * **Trace Element:** Needed in minute quantities (e.g., Selenium, Zinc, Iodine).
-* **Toxicity & Hazards**
-    * **Toxicity Profile:** Acute and chronic effects of ingestion, inhalation, or skin contact.
-    * **Heavy Metal Toxicity:** Bioaccumulation risks (e.g., Lead, Mercury, Cadmium).
-    * **Carcinogenicity:** Classification by agencies like IARC.
-* **Environmental Impact**
-    * Ecotoxicity, persistence, and bioaccumulation pathways in food chains.
-* **Safety & Handling (SDS)**
-    * **NFPA 704 Diamond Ratings:** Health, Flammability, Instability, and Special hazards.
-    * **Personal Protective Equipment (PPE):** Required safety gear for laboratory or industrial handling.
+* **Discovery Date**
