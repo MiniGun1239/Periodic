@@ -46,7 +46,7 @@ pub fn get_shorthand_config(mut electrons:u8) -> String {
 
     let mut parts: Vec<String> = Vec::new();
     let preceding_noble_gas: &str;
-    let mut preceding_noble_gas_number: u8 = 0;
+    let preceding_noble_gas_number: u8;
 
     for (name, i) in NOBLE_GASES.iter().rev() {
         if *i == 1 {
