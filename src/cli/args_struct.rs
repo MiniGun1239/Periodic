@@ -20,4 +20,10 @@ pub struct CliArgs {
         long = "name"
     )]
     pub name: bool,
+    
+    #[arg(
+        short = 'e',
+        long = "electron"
+    )]
+    pub electron: Option<String>
 }
