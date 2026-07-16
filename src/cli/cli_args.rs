@@ -4,7 +4,7 @@ use clap::Parser;
 #[clap(author, version, about, long_about = None)]
 pub struct CliArgs {
     #[arg(
-        alias = "q"
+        default_missing_value = None,
     )]
     pub(crate) query: Option<u8>,
     
