@@ -5,6 +5,8 @@ pub mod cli;
 pub mod output;
 pub mod electron;
 
+use crate::cli::handle_flag::handle;
+
 fn main() {
     let args = cli::parse::parse_flags();
 
