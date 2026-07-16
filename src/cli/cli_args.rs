@@ -45,5 +45,12 @@ pub struct CliArgs {
         default_value = "default"
 
     )]
-    pub electron: Option<String>
+    pub physical_properties: Option<String>,
+
+    #[arg(
+        short = 'g',
+        long = "grouping",
+        alias = "periodic-table"
+    )]
+    pub grouping: Option<String>,
 }
