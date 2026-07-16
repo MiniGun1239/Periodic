@@ -55,7 +55,6 @@ How an element interacts with other elements depends entirely on the spatial arr
 * **Valency & Oxidation States**
     * **Valency**
     * **Common Oxidation States**
-    * **Experimental/Rare Oxidation States**
 * **Electronegativity**
     * **Pauling Scale**
     * **Alternative Scales:** Mulliken-Jaffe, Allred-Rochow, or Sanderson scales.
