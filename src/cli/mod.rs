@@ -1,3 +1,3 @@
 pub mod parse;
-pub mod args_struct;
+pub mod cli_args;
 pub mod handle_flag;
