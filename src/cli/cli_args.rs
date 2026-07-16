@@ -21,7 +21,13 @@ pub struct CliArgs {
         long = "name"
     )]
     pub name: bool,
-    
+
+    #[arg(
+        short = 's',
+        long = "symbol",
+    )]
+    pub symbol: bool,
+
     #[arg(
         short = 'e',
         long = "electron",
