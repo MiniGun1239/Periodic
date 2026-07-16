@@ -10,7 +10,8 @@ pub struct CliArgs {
     
     #[arg(
         short = 'm',
-        long = "unified-mass",
+        long = "atomic-mass",
+        alias = "unified-mass",
         alias = "mass",
     )]
     pub mass: bool,
