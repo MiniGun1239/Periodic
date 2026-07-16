@@ -23,7 +23,8 @@ pub struct CliArgs {
     
     #[arg(
         short = 'e',
-        long = "electron"
+        long = "electron",
+        alias = "electronic-config",
     )]
     pub electron: Option<String>
 }
