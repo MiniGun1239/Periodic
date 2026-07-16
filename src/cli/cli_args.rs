@@ -9,14 +9,6 @@ pub struct CliArgs {
     pub(crate) query: Option<u8>,
     
     #[arg(
-        short = 'm',
-        long = "atomic-mass",
-        alias = "unified-mass",
-        alias = "mass",
-    )]
-    pub mass: bool,
-    
-    #[arg(
         short = 'n',
         long = "name"
     )]
