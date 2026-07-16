@@ -5,3 +5,4 @@
 > (at your option) any later version.
 
 # Periodic
+This is a CLI app
