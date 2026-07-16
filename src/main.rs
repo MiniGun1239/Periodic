@@ -1,5 +1,3 @@
-use crate::cli::handle_flag::handle;
-
 pub mod details;
 pub mod cli;
 pub mod output;
