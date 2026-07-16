@@ -1,7 +1,3 @@
-use std::arch::x86_64::_mm_add_sd;
-use std::ptr::addr_eq;
-use clap::ArgAction::SetTrue;
-
 pub fn parse(args: String) {
 
     let bohr_config = [
