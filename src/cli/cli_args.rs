@@ -21,6 +21,14 @@ pub struct CliArgs {
     pub symbol: bool,
 
     #[arg(
+        short = 'm',
+        long = "atomic-mass",
+        alias = "unified-mass",
+        alias = "mass",
+    )]
+    pub mass: bool,
+
+    #[arg(
         short = 'e',
         long = "electron",
         alias = "electronic-config",
