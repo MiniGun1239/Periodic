@@ -1,5 +1,5 @@
 use clap::Parser;
-use crate::cli::args_struct::CliArgs;
+use crate::cli::cli_args::CliArgs;
 
 pub fn parse_flags() -> CliArgs {
     let args: CliArgs = CliArgs::parse();
