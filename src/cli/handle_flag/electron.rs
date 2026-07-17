@@ -77,7 +77,7 @@ fn help() {
     print!  ("  h , help                 Prints help information\n\n");
 
     println!("  bc, bohr-config          Prints the Bohr Configuration");
-    println!("  qc, quantium-config      Prints the Quantium Configuration");
+    println!("  qc, quantum-config       Prints the Quantum Configuration");
     println!("  sc, semantic-config      Prints the Semantic Configuration");
 
     println!("  v , valence              Prints the Valence Information");
