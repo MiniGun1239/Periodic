@@ -70,9 +70,19 @@ pub fn parse(number: u8, args: String) {
 }
 
 fn help() {
-    todo!(
-        "print all the config functions"
-    )
+    print!("Options:\n");
+    println!("Usage: periodic [ATOMIC_NUMBER] electron [OPTIONS]\n");
+    println!("---");
+
+    print!  ("  h , help                 Prints help information\n\n");
+
+    println!("  bc, bohr-config          Prints the Bohr Configuration");
+    println!("  qc, quantium-config      Prints the Quantium Configuration");
+    println!("  sc, semantic-config      Prints the Semantic Configuration");
+
+    println!("  v , valence              Prints the Valence Information");
+    println!("  ie, ionization-energy    Prints the ionization Energy");
+    println!("  ea, electron-affinity    Prints the Electron Affinity");
 }
 
 fn incomplete() {
