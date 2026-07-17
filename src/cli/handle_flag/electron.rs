@@ -59,6 +59,14 @@ pub fn parse(number: u8, args: String) {
     else if VALENCE_KEYWORDS.contains(&&*args) {
         valence(number);
     }
+
+    else if FIRST_IONIZATION_ENERGY_KEYWORDS.contains(&&*args) {
+        ionization_energy(number);
+    }
+
+    else if ELECTRON_AFFINITY_KEYWORDS.contains(&&*args) {
+        affinity(number);
+    }
 }
 
 fn help() {
