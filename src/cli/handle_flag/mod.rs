@@ -25,6 +25,6 @@ pub fn handle(args: CliArgs) {
     }
 
     if args.electron != None {
-        electron::parse(args.electron.unwrap().to_lowercase());
+        electron::parse(number, args.electron.unwrap().to_lowercase());
     }
 }
