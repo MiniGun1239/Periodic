@@ -30,3 +30,15 @@ pub fn valence(number: u8) {
 
     drop(element);
 }
+
+pub fn ionization_energy(number: u8) {
+    let element: Option<Element> = lookup(number);
+
+    element.unwrap().first_ionization_energy;
+}
+
+pub fn affinity(number: u8) {
+    let element: Option<Element> = lookup(number);
+
+    element.unwrap().electron_affinity;
+}
