@@ -1,5 +1,4 @@
 use crate::output::electron;
-use crate::output::electron::{number, quantum};
 
 static BOHR_CONFIG_KEYWORDS: [&str; 3] = [
     "bc", "bohr", "bohr-config"
@@ -24,7 +23,7 @@ static FIRST_IONIZATION_ENERGY_KEYWORDS: [&str; 5] = [
 ];
 
 static ELECTRON_AFFINITY_KEYWORDS: [&str; 3] = [
-    "electron-affinity", "affinity", "ea",
+    "ea", "electron-affinity", "affinity",
 ];
 
 pub fn parse(number: u8, args: String) {
@@ -34,9 +33,7 @@ pub fn parse(number: u8, args: String) {
     }
 
     else if args == "default" {
-        todo!(
-            "call literally everything"
-        )
+        all(number);
     }
 
     else if BOHR_CONFIG_KEYWORDS.contains(&&*args) {
@@ -69,6 +66,32 @@ pub fn parse(number: u8, args: String) {
     }
 }
 
+fn bohr_config(number: u8) {
+    electron::bohr(number);
+}
+
+fn quantum_config(number: u8) {
+    electron::quantum(number);
+}
+
+fn semantic_config(number: u8) {
+    electron::semantic(number);
+}
+
+fn valence(number: u8) {
+    electron::valence(number);
+}
+
+fn ionization_energy(number: u8) {
+    electron::ionization_energy(number);
+}
+
+fn affinity(number: u8) {
+    electron::affinity(number);
+}
+
+// Special functions
+
 fn help() {
     print!("Options:\n");
     println!("Usage: periodic [ATOMIC_NUMBER] electron [OPTIONS]\n");
@@ -86,43 +109,13 @@ fn help() {
 }
 
 fn incomplete() {
-    todo!(
-        "print a warning, then help, then everything"
-    )
+    println!("Incorrect or no arguments supplied.");
+
+    help();
 }
 
-fn bohr_config(atomic_number: u8) {
+fn all(number: u8) {
     todo!(
-        "call output::electron::bohr"
-    )
-}
-
-fn quantum_config(atomic_number: u8) {
-    todo!(
-        "call output::electron::quantum"
-    )
-}
-
-fn semantic_config(atomic_number: u8) {
-    todo!(
-        "call output::electron::semantic"
-    )
-}
-
-fn valence(atomic_number: u8) {
-    todo!(
-        "call output::electron::valence"
-    )
-}
-
-fn ionization_energy(atomic_number: u8) {
-    todo!(
-        "call output::electron::ionize_energy"
-    )
-}
-
-fn affinity(atomic_number: u8) {
-    todo!(
-        "call output::electron::affinity"
+        "call output::electron::all"
     )
 }
