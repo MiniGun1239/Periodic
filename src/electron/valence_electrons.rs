@@ -1,4 +1,4 @@
-use crate::electron::quantum_model::orbitals::ORBITALS;
+use crate::electron::orbitals::ORBITALS;
 
 pub fn get(mut electrons:u8) -> u8 {
     if electrons == 0 {
