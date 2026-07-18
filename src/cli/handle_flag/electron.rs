@@ -64,6 +64,10 @@ pub fn parse(number: u8, args: String) {
     else if ELECTRON_AFFINITY_KEYWORDS.contains(&&*args) {
         affinity(number);
     }
+
+    else {
+        incomplete()
+    }
 }
 
 fn bohr_config(number: u8) {
@@ -93,29 +97,31 @@ fn affinity(number: u8) {
 // Special functions
 
 fn help() {
-    print!("Options:\n");
-    println!("Usage: periodic [ATOMIC_NUMBER] electron [OPTIONS]\n");
-    println!("---");
+    println!("List of Available Options:");
+    println!("Usage: periodic [ATOMIC_NUMBER] electron [OPTIONS]");
+    println!(" ---");
 
     print!  ("  h , help                 Prints help information\n\n");
 
     println!("  bc, bohr-config          Prints the Bohr Configuration");
     println!("  qc, quantum-config       Prints the Quantum Configuration");
-    println!("  sc, semantic-config      Prints the Semantic Configuration");
+    print!  ("  sc, semantic-config      Prints the Semantic Configuration\n\n");
 
     println!("  v , valence              Prints the Valence Information");
     println!("  ie, ionization-energy    Prints the ionization Energy");
-    println!("  ea, electron-affinity    Prints the Electron Affinity");
+    print!  ("  ea, electron-affinity    Prints the Electron Affinity\n\n");
+
+    println!("  a , all                  Prints all of the above");
 }
 
 fn incomplete() {
-    println!("Incorrect or no arguments supplied.");
+    println!("  Incorrect or no arguments supplied.");
+    println!("    -- -- -- -- -- - -- -- -- -- --  ");
+    println!("  ");
 
     help();
 }
 
 fn all(number: u8) {
-    todo!(
-        "call output::electron::all"
-    )
+    electron::all(number)
 }
