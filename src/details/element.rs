@@ -15,11 +15,11 @@ pub struct Element {
     pub category: String,
     pub group: u8,
     pub period: u8,
+    pub block: String, // Hopefully this works still
 
     pub bohr_config: String,
     pub quantum_config: String,
     pub quantum_semantic_config: String,
-    pub block: String,
 
     pub first_ionization_energy: f64,
     pub electron_affinity: f64,

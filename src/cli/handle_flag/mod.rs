@@ -4,6 +4,8 @@ pub mod name;
 pub mod symbol;
 pub mod mass;
 pub mod electron;
+pub mod physical;
+pub mod grouping;
 
 pub fn handle(args: CliArgs) {
     if args.query == None {
@@ -26,5 +28,13 @@ pub fn handle(args: CliArgs) {
 
     if args.electron != None {
         electron::parse(number, args.electron.unwrap().to_lowercase());
+    }
+    
+    if args.grouping != None {
+        grouping::parse(number, args.grouping.unwrap().to_lowercase());
+    }
+    
+    if args.physical_properties != None {
+        physical::parse(number, args.physical_properties.unwrap().to_lowercase())
     }
 }
