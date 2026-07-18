@@ -5,7 +5,7 @@ pub fn get(mut electrons:u8) -> u8 {
         return 0;
     }
 
-    for &(orbital, amount) in &ORBITALS {
+    for &(_orbital, amount) in &ORBITALS {
         if electrons == 0 {
             return 0;
         }
