@@ -1,3 +1,5 @@
+use crate::output;
+
 static CATEGORY_KEYWORDS: [&str; 3] = [
     "c", "cat", "category"
 ];
@@ -16,63 +18,78 @@ static BLOCK_KEYWORDS: [&str; 4]    = [
 
 
 pub fn parse(number:u8, args: String) {
-    if CATEGORY_KEYWORDS.contains(&&args[..]) {
+    if args == "h" || args == "help" || args == "-h" || args == "--help" {
+        help()
+    }
+
+    else if args == "default" || args == "d" {
+        all(number);
+    }
+
+    else if args == "a" || args == "all" {
+        all(number);
+    }
+
+    else if CATEGORY_KEYWORDS.contains(&&args[..]) {
         category(number);
     }
 
-    if GROUP_KEYWORDS.contains(&&args[..]) {
+    else if GROUP_KEYWORDS.contains(&&args[..]) {
         group(number);
     }
 
-    if PERIOD_KEYWORDS.contains(&&args[..]) {
+    else if PERIOD_KEYWORDS.contains(&&args[..]) {
         period(number);
     }
 
-    if BLOCK_KEYWORDS.contains(&&args[..]) {
+    else if BLOCK_KEYWORDS.contains(&&args[..]) {
         block(number);
     }
 }
 
 fn category(number: u8) {
-    todo!(
-        "call output::grouping::category"
-    )
+    output::grouping::category(number);
 }
 
 fn group(number: u8) {
-    todo!(
-        "call output::grouping::group"
-    )
+    output::grouping::group(number);
 }
 
 fn period(number: u8) {
-    todo!(
-        "call output::grouping::period"
-    )
+    output::grouping::period(number);
 }
 
 fn block(number: u8) {
-    todo!(
-        "call output::grouping::block"
-    )
+    output::grouping::block(number);
 }
+
 
 // Special Funcs
 
-fn help(number: u8) {
-    todo!(
-        "print help info"
-    )
+
+fn help() {
+    println!("List of Available Options:");
+    println!("Usage: periodic [ATOMIC_NUMBER] --grouping [OPTIONS]");
+    println!(" ---");
+
+    print!  ("  h, help         Prints help information\n\n");
+
+    print!  ("  c, category     Prints category of element\n\n");
+
+    println!("  g, group        Prints group of element");
+    print!  ("  p, period       Prints period of element\n\n");
+
+    println!("  b, block        Prints block of element");
 }
 
 fn incomplete(number: u8) {
-    todo!(
-        "print wrong keyword and then, help"
-    )
+    println!("  Incorrect or no arguments provided");
+    println!("   -- -- -- -- -- -- -- -- -- -- -- ");
+    println!();
+
+    help();
 }
 
 fn all(number: u8) {
-    todo!(
-        "call output::grouping::all"
-    )
+    output::grouping::all(number);
 }

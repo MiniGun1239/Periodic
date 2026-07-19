@@ -1,49 +1,67 @@
 use crate::details::element::Element;
+use crate::details::lookup;
 
-pub fn category() {
-    todo!(
-        "call out_category"
-    )
+pub fn category(number: u8) {
+    let element: Option<Element> = lookup(number);
+
+    out_category(element, number);
 }
 
-pub fn group() {
-    todo!(
-        "call out_group"
-    )
+pub fn group(number: u8) {
+    let element: Option<Element> = lookup(number);
+
+    out_group(element, number);
 }
 
-pub fn period() {
-    todo!(
-        "call out_period"
-    )
+pub fn period(number: u8) {
+    let element: Option<Element> = lookup(number);
+
+    out_period(element, number);
 }
 
-pub fn block() {
-    todo!(
-        "call out_block"
-    )
+pub fn block(number: u8) {
+    let element: Option<Element> = lookup(number);
+
+    out_block(element, number);
 }
 
-fn out_category(element: Element, number: u8) {
-    todo!(
-        "output category info"
-    )
+
+// Special functions
+
+pub fn all(number: u8) {
+    category(number);
+    group(number);
+    period(number);
+    block(number);
 }
 
-fn out_group(element: Element, number: u8) {
-    todo!(
-        "output group info"
-    )
+
+// Output functions
+
+fn out_category(element: Option<Element>, number: u8) {
+    let output = element.unwrap().category;
+
+    println!("Category of element {}: {}", number, output);
+    println!("  ---");
 }
 
-fn out_period(element: Element, number: u8) {
-    todo!(
-        "output period info"
-    )
+fn out_group(element: Option<Element>, number: u8) {
+    let output = element.unwrap().group;
+
+    println!("Group of element {}: {}", number, output);
+    println!("  ---");
 }
 
-fn out_block(element: Element, number: u8) {
-    todo!(
-        "output block info"
-    )
+fn out_period(element: Option<Element>, number: u8) {
+    let output = element.unwrap().period;
+
+    println!("Period of element {}: {}", number, output);
+    println!("  ---");
+}
+
+fn out_block(element: Option<Element>, number: u8) {
+    let output = element.unwrap().block;
+
+    println!("Block of element {}: {}", number, output);
+    println!("  ---");
 }
