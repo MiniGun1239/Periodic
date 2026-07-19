@@ -119,9 +119,9 @@ fn help() {
 }
 
 fn incomplete() {
-    println!("  Incorrect or no arguments supplied.");
-    println!("    -- -- -- -- -- - -- -- -- -- --  ");
-    println!("  ");
+    println!("  Incorrect or no arguments provided");
+    println!("    -- -- -- -- -- - -- -- -- -- -- ");
+    println!();
 
     help();
 }
