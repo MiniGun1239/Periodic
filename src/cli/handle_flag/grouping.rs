@@ -45,6 +45,10 @@ pub fn parse(number:u8, args: String) {
     else if BLOCK_KEYWORDS.contains(&&args[..]) {
         block(number);
     }
+
+    else {
+        incomplete();
+    }
 }
 
 fn category(number: u8) {
@@ -82,7 +86,7 @@ fn help() {
     println!("  b, block        Prints block of element");
 }
 
-fn incomplete(number: u8) {
+fn incomplete() {
     println!("  Incorrect or no arguments provided");
     println!("   -- -- -- -- -- -- -- -- -- -- -- ");
     println!();
