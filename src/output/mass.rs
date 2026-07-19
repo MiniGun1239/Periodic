@@ -1,8 +1,9 @@
 use crate::details::element::Element;
 use crate::details::lookup;
 
-pub fn output(atomic_number: u8) {
-    let element: Option<Element> = lookup(atomic_number);
+pub fn output(number: u8) {
+    let element: Option<Element> = lookup(number);
 
-    element.unwrap().mass;
+    println!("  Average Mass: {}u", element.unwrap().mass);
+    println!("---");
 }

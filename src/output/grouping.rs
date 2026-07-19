@@ -4,25 +4,25 @@ use crate::details::lookup;
 pub fn category(number: u8) {
     let element: Option<Element> = lookup(number);
 
-    out_category(element, number);
+    out_category(number, element);
 }
 
 pub fn group(number: u8) {
     let element: Option<Element> = lookup(number);
 
-    out_group(element, number);
+    out_group(number, element);
 }
 
 pub fn period(number: u8) {
     let element: Option<Element> = lookup(number);
 
-    out_period(element, number);
+    out_period(number, element);
 }
 
 pub fn block(number: u8) {
     let element: Option<Element> = lookup(number);
 
-    out_block(element, number);
+    out_block(number, element);
 }
 
 
@@ -38,30 +38,30 @@ pub fn all(number: u8) {
 
 // Output functions
 
-fn out_category(element: Option<Element>, number: u8) {
+fn out_category(_number: u8, element: Option<Element>) {
     let output = element.unwrap().category;
 
-    println!("  Category of element {}: {}", number, output);
+    println!("  Category: {}", output);
     println!("---");
 }
 
-fn out_group(element: Option<Element>, number: u8) {
+fn out_group(_number: u8, element: Option<Element>) {
     let output = element.unwrap().group;
 
-    println!("  Group of element {}: {}", number, output);
+    println!("  Group: {}", output);
     println!("---");
 }
 
-fn out_period(element: Option<Element>, number: u8) {
+fn out_period(_number: u8, element: Option<Element>) {
     let output = element.unwrap().period;
 
-    println!("  Period of element {}: {}", number, output);
+    println!("  Period: {}", output);
     println!("---");
 }
 
-fn out_block(element: Option<Element>, number: u8) {
+fn out_block(_number: u8, element: Option<Element>) {
     let output = element.unwrap().block;
 
-    println!("  Block of element {}: {}", number, output);
+    println!("  Block: {}", output);
     println!("---");
 }

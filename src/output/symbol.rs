@@ -1,8 +1,9 @@
 use crate::details::lookup;
 use crate::details::element::Element;
 
-pub fn output(atomic_number: u8) {
-    let element: Option<Element> = lookup(atomic_number);
+pub fn output(number: u8) {
+    let element: Option<Element> = lookup(number);
 
-    element.unwrap().symbol;
+    println!("  Symbol: {}", element.unwrap().symbol);
+    println!("---");
 }
