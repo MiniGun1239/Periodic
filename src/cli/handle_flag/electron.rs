@@ -34,7 +34,7 @@ static ELECTRON_AFFINITY_KEYWORDS: [&str; 3] = [
 
 pub fn parse(number: u8, args: String) {
 
-    if args == "-h" || args == "--help" || args == "h" || args == "help" {
+    if args == "h" || args == "help" || args == "-h" || args == "--help" {
         help()
     }
 
