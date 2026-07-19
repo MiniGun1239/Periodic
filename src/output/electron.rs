@@ -62,40 +62,39 @@ pub fn all(number: u8) {
 fn out_quantum_config(number: u8, output: String) {
     println!("  Quantum Configuration of Element {}:", number);
     println!("  {}", output);
-    println!("  ---");
+    println!("---");
 }
 
 fn out_bohr_config(number: u8, output: String) {
     println!("  Bohr configuration of Element {}:", number);
     println!("  {}", output);
-    println!("  ---");
+    println!("---");
 }
 
 fn out_semantic_config(number: u8, output: String) {
     println!("  Semantic configuration of Element {}:", number);
     println!("  {}", output);
-    println!("  ---");
+    println!("---");
 }
 
 fn out_valence(number: u8, element: Option<Element>) {
-    println!("  Valence Information of Element {}:", number);
-    println!("  Number of electrons in last shell filled: {:?}", electron::valence_electrons::get(number));
-
     let element_unwrap_bohr_config = element.unwrap().bohr_config;
-
     let bohr_electrons: Vec<&str> = element_unwrap_bohr_config.split(',').collect();
 
+    println!("  Valence Information of Element {}:", number);
+    println!("  Number of electrons in last shell filled: {:?}", electron::valence_electrons::get(number));
     println!("  Electrons in the last {} shell: {}", bohr_electrons.len(), bohr_electrons.last().unwrap());
+    println!("---");
 }
 
 fn out_ionization_energy(number: u8, output: f64) {
     println!("  First Ionization Energy of Element {}:", number);
     println!("  {} Joules", output);
-    println!("  ---");
+    println!("---");
 }
 
 fn out_affinity(number: u8, output: f64) {
     println!("  Electron Affinity of Element {}:", number);
     println!("  {} Joules", output);
-    println!("  ---");
+    println!("---");
 }

@@ -65,6 +65,10 @@ pub fn parse(number: u8, args: String) {
         affinity(number);
     }
 
+    else if args == "a" || args == "all" {
+        all(number);
+    }
+
     else {
         incomplete()
     }
