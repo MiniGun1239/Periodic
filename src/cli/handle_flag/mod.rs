@@ -12,6 +12,14 @@ pub fn handle(args: CliArgs) {
     if args.query != None {
         let number: u8 = args.query.unwrap();
 
+        if number < 1 || number > 119 {
+            println!("Number must be between 1 (H) and 119 (Uue)");
+            exit(1);
+        }
+
+        println!("  Outputting for Element {}:", number);
+        println!("---");
+
         if args.name {
             name::parse(number);
         }
