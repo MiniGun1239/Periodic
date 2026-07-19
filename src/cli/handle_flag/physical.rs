@@ -26,7 +26,7 @@ pub fn parse(number:u8, args: String) {
     }
 
     else if BOILING_KEYWORDS.contains(&&args[..]) {
-        melting_point(number);
+        boiling_point(number);
     }
 
     else if MELTING_KEYWORDS.contains(&&args[..]) {
@@ -77,7 +77,7 @@ fn help() {
 
     println!("  b, boiling-point    Prints boiling point of element");
     println!("  m, melting-point    Prints melting point of element");
-    
+
     println!("  d, density          Prints density of element at STP");
     println!("  p, phase            Prints phase of element at STP");
 }
