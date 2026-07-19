@@ -41,27 +41,27 @@ pub fn all(number: u8) {
 fn out_category(element: Option<Element>, number: u8) {
     let output = element.unwrap().category;
 
-    println!("Category of element {}: {}", number, output);
-    println!("  ---");
+    println!("  Category of element {}: {}", number, output);
+    println!("---");
 }
 
 fn out_group(element: Option<Element>, number: u8) {
     let output = element.unwrap().group;
 
-    println!("Group of element {}: {}", number, output);
-    println!("  ---");
+    println!("  Group of element {}: {}", number, output);
+    println!("---");
 }
 
 fn out_period(element: Option<Element>, number: u8) {
     let output = element.unwrap().period;
 
-    println!("Period of element {}: {}", number, output);
-    println!("  ---");
+    println!("  Period of element {}: {}", number, output);
+    println!("---");
 }
 
 fn out_block(element: Option<Element>, number: u8) {
     let output = element.unwrap().block;
 
-    println!("Block of element {}: {}", number, output);
-    println!("  ---");
+    println!("  Block of element {}: {}", number, output);
+    println!("---");
 }

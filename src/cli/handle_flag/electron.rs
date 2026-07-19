@@ -1,5 +1,8 @@
 use crate::output;
 
+
+// keywords
+
 static BOHR_CONFIG_KEYWORDS: [&str; 3] = [
     "bc", "bohr", "bohr-config"
 ];
@@ -25,6 +28,9 @@ static FIRST_IONIZATION_ENERGY_KEYWORDS: [&str; 5] = [
 static ELECTRON_AFFINITY_KEYWORDS: [&str; 3] = [
     "ea", "electron-affinity", "affinity",
 ];
+
+
+// parser
 
 pub fn parse(number: u8, args: String) {
 
@@ -69,6 +75,9 @@ pub fn parse(number: u8, args: String) {
         incomplete()
     }
 }
+
+
+// priv funcs
 
 fn bohr_config(number: u8) {
     output::electron::bohr(number);
