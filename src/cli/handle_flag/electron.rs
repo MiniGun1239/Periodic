@@ -102,7 +102,7 @@ fn affinity(number: u8) {
 
 fn help() {
     println!("List of Available Options:");
-    println!("Usage: periodic [ATOMIC_NUMBER] electron [OPTIONS]");
+    println!("Usage: periodic [ATOMIC_NUMBER] --electron [OPTIONS]");
     println!(" ---");
 
     print!  ("  h , help                 Prints help information\n\n");
