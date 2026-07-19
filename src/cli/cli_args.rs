@@ -32,8 +32,7 @@ pub struct CliArgs {
         short = 'e',
         long = "electron",
         alias = "electronic-config",
-        default_missing_value = None,
-        default_value = "default"
+        default_missing_value = None
     )]
     pub electron: Option<String>,
 
