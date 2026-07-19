@@ -1,3 +1,4 @@
+use std::process::exit;
 use crate::cli::cli_args::CliArgs;
 
 pub mod name;
@@ -8,33 +9,33 @@ pub mod physical;
 pub mod grouping;
 
 pub fn handle(args: CliArgs) {
-    if args.query == None {
-        todo!()
-    }
+    if args.query != None {
+        let number: u8 = args.query.unwrap();
 
-    let number: u8 = args.query.unwrap();
+        if args.name {
+            name::parse(number);
+        }
 
-    if args.name {
-        name::parse(number);
-    }
+        if args.symbol {
+            symbol::parse(number);
+        }
 
-    if args.symbol {
-        symbol::parse(number);
-    }
+        if args.mass {
+            mass::parse(number);
+        }
 
-    if args.mass {
-        mass::parse(number);
-    }
+        if args.electron != None {
+            electron::parse(number, args.electron.unwrap().to_lowercase());
+        }
 
-    if args.electron != None {
-        electron::parse(number, args.electron.unwrap().to_lowercase());
-    }
-    
-    if args.grouping != None {
-        grouping::parse(number, args.grouping.unwrap().to_lowercase());
-    }
-    
-    if args.physical_properties != None {
-        physical::parse(number, args.physical_properties.unwrap().to_lowercase())
+        if args.grouping != None {
+            grouping::parse(number, args.grouping.unwrap().to_lowercase());
+        }
+
+        if args.physical_properties != None {
+            physical::parse(number, args.physical_properties.unwrap().to_lowercase())
+        }
+
+        exit(0);
     }
 }

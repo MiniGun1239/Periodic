@@ -31,8 +31,7 @@ pub struct CliArgs {
     #[arg(
         short = 'e',
         long = "electron",
-        alias = "electronic-config",
-        default_missing_value = None
+        alias = "electronic-config"
     )]
     pub electron: Option<String>,
 
@@ -40,8 +39,7 @@ pub struct CliArgs {
         short = 'p',
         long = "physical-properties",
         alias = "phy",
-        alias = "physical",
-        default_value = "default"
+        alias = "physical"
 
     )]
     pub physical_properties: Option<String>,

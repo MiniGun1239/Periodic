@@ -22,11 +22,7 @@ pub fn parse(number:u8, args: String) {
         help()
     }
 
-    else if args == "default" || args == "d" {
-        all(number);
-    }
-
-    else if args == "a" || args == "all" {
+    else if args == "." || args == "a" || args == "all" {
         all(number);
     }
 

@@ -32,7 +32,7 @@ pub fn parse(number: u8, args: String) {
         help()
     }
 
-    else if args == "default" {
+    else if args == "." || args == "a" || args == "all" {
         all(number);
     }
 
@@ -63,10 +63,6 @@ pub fn parse(number: u8, args: String) {
 
     else if ELECTRON_AFFINITY_KEYWORDS.contains(&&*args) {
         affinity(number);
-    }
-
-    else if args == "a" || args == "all" {
-        all(number);
     }
 
     else {

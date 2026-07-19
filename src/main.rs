@@ -6,6 +6,8 @@ pub mod electron;
 use crate::cli::handle_flag::handle;
 
 fn main() {
+    println!("---");
+
     let args = cli::parse::parse_flags();
 
     handle(args);
