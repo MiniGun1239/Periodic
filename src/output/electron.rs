@@ -83,7 +83,7 @@ fn out_valence(number: u8, element: Option<Element>) {
 
     println!("  Valence Information:");
     println!("  Number of electrons in last shell filled: {:?}", electron::valence_electrons::get(number));
-    println!("  Electrons in the last {} shell: {}", bohr_electrons.len(), bohr_electrons.last().unwrap());
+    println!("  Electrons in the last ({}th) shell: {}", bohr_electrons.len(), bohr_electrons.last().unwrap());
     println!("---");
 }
 
