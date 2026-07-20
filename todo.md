@@ -10,17 +10,17 @@ These parameters are the fundamental identifiers of an element. They are static,
 
 * **Element Name & Symbol**
     * ~~**Element Name**~~
-    * **Chemical Symbol**
+    * ~~**Chemical Symbol**~~
     * **Etymology**
-* **Group, Period, and Block**
-    * **Group Number (1–18):** 
-    * **Period Number (1–7):**
-    * **Block ($s, p, d, f$) (Last filled shell):**
+* **Group, Period, and Block**  
+    * ~~**Group Number (1–18):**~~  
+    * ~~**Period Number (1–7):**~~  
+    * ~~**Block (s, p, d, f) (Last filled shell):**~~
 * **Category / Classification**
     * Major divisions: 
-      * **Metals** (Alkali, Alkaline Earth, Transition, Post-transition, Lanthanides, Actinides), 
-      * **Metalloids**, 
-      * **Nonmetals** (Reactive nonmetals, Halogens, Noble Gases).
+      * ~~**Metals**~~
+      * ~~**Metalloids**~~
+      * ~~**Nonmetals**~~
 
 ---
 
@@ -50,14 +50,13 @@ How an element interacts with other elements depends entirely on the spatial arr
     * ~~**Noble Gas Notation**~~
     * **Orbital Diagram**
 * **Valence Electrons**
-    * **Count**
+    * ~~**Count**~~
     * **Lewis Dot Structure**
 * **Valency & Oxidation States**
     * **Valency**
     * **Common Oxidation States**
 * **Electronegativity**
     * **Pauling Scale**
-    * **Alternative Scales:** Mulliken-Jaffe, Allred-Rochow, or Sanderson scales.
 
 ---
 
@@ -65,14 +64,11 @@ How an element interacts with other elements depends entirely on the spatial arr
 These physical constants characterize the element in its pure elemental state (usually at Standard Temperature and Pressure, STP: $0^\circ\text{C}$ and $1\text{ atm}$).
 
 * **State of Matter at STP**
-    * Phase: **Solid**, **Liquid**, or **Gas**.
+    * ~~Phase: **Solid**, **Liquid**, or **Gas**.~~
 * **Transition Temperatures**
-    * **Melting Point**
-    * **Boiling Point**
+    * ~~**Melting Point**~~
+    * ~~**Boiling Point**~~
     * **Triple Point / Critical Point**
-* **Density & Phase Densities**
-    * **Solid/Liquid Density**
-    * **Gas Density**
 * **Thermal & Electrical Conductivities**
     * **Thermal Conductivity**
     * **Electrical Conductivity / Resistivity**
@@ -93,13 +89,11 @@ These physical constants characterize the element in its pure elemental state (u
 Properties that vary systematically across the periodic table due to changes in nuclear charge and electron shielding.
 
 * **Radii**
-    * **Atomic Radius:**
-    * **Ionic Radius:**
-    * **Covalent Radius:**
-* **Ionization Energy**
-    * **First Ionization Energy**
-    * **Successive Ionization Energies**.
-* **Electron Affinity**
+    * **Atomic Radius**
+    * **Ionic Radius**
+    * **Covalent Radius**
+* ~~**First Ionization Energy**~~
+* ~~**Electron Affinity**~~
 
 ---
 
