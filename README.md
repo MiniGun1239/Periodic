@@ -8,7 +8,7 @@
 
 > Fun with chemistry and statistics
 
-Fun chem app
+Fun chem app ("Fun" in very, very deep quotes, and very subjective)
 
 ---
 
