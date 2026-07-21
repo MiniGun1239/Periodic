@@ -4,8 +4,14 @@ pub mod special;
 use std::process::exit;
 use regular::{electron, grouping, mass, name, physical, symbol};
 use crate::cli::cli_args::CliArgs;
+use crate::output::special::logo::ascii;
 
 pub fn pass_to_handler(args: CliArgs) {
+    if args.logo {
+        ascii();
+        exit(0)
+    }
+
     if let Some(_query) = args.query.as_ref() {
         let query = _query.to_lowercase();
 

@@ -89,4 +89,11 @@ pub struct CliArgs {
         long = "reverse"
     )]
     pub reverse: bool,
+
+
+    /// Swag
+    #[arg(
+        long = "logo"
+    )]
+    pub logo: bool,
 }
