@@ -1,6 +1,4 @@
-use crate::output;
-
-
+use crate::output::regular;
 // keywords
 
 static BOHR_CONFIG_KEYWORDS: [&str; 3] = [
@@ -80,27 +78,27 @@ pub fn parse(number: u8, args: String) {
 // priv funcs
 
 fn bohr_config(number: u8) {
-    output::electron::bohr(number);
+    regular::electron::bohr(number);
 }
 
 fn quantum_config(number: u8) {
-    output::electron::quantum(number);
+    regular::electron::quantum(number);
 }
 
 fn semantic_config(number: u8) {
-    output::electron::semantic(number);
+    regular::electron::semantic(number);
 }
 
 fn valence(number: u8) {
-    output::electron::valence(number);
+    regular::electron::valence(number);
 }
 
 fn ionization_energy(number: u8) {
-    output::electron::ionization_energy(number);
+    regular::electron::ionization_energy(number);
 }
 
 fn affinity(number: u8) {
-    output::electron::affinity(number);
+    regular::electron::affinity(number);
 }
 
 // Special functions
@@ -132,5 +130,5 @@ fn incomplete() {
 }
 
 fn all(number: u8) {
-    output::electron::all(number)
+    regular::electron::all(number)
 }

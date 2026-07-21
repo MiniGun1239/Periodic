@@ -1,4 +1,4 @@
-use crate::output;
+use crate::output::regular;
 
 static BOILING_KEYWORDS: [&str; 4] = [
     "b", "boil", "boiling", "boiling-point"
@@ -50,19 +50,19 @@ pub fn parse(number:u8, args: String) {
 // private funcs
 
 fn boiling_point(number: u8) {
-    output::physical::boil(number);
+    regular::physical::boil(number);
 }
 
 fn melting_point(number: u8) {
-    output::physical::melt(number);
+    regular::physical::melt(number);
 }
 
 fn density(number: u8) {
-    output::physical::density(number);
+    regular::physical::density(number);
 }
 
 fn phase(number: u8) {
-    output::physical::phase(number)
+    regular::physical::phase(number)
 }
 
 
@@ -90,5 +90,5 @@ fn incomplete() {
 }
 
 fn all(number: u8) {
-    output::physical::all(number);
+    regular::physical::all(number);
 }

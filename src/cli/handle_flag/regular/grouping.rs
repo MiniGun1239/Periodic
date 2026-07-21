@@ -1,4 +1,4 @@
-use crate::output;
+use crate::output::regular;
 
 static CATEGORY_KEYWORDS: [&str; 3] = [
     "c", "cat", "category"
@@ -48,19 +48,19 @@ pub fn parse(number:u8, args: String) {
 }
 
 fn category(number: u8) {
-    output::grouping::category(number);
+    regular::grouping::category(number);
 }
 
 fn group(number: u8) {
-    output::grouping::group(number);
+    regular::grouping::group(number);
 }
 
 fn period(number: u8) {
-    output::grouping::period(number);
+    regular::grouping::period(number);
 }
 
 fn block(number: u8) {
-    output::grouping::block(number);
+    regular::grouping::block(number);
 }
 
 
@@ -91,5 +91,5 @@ fn incomplete() {
 }
 
 fn all(number: u8) {
-    output::grouping::all(number);
+    regular::grouping::all(number);
 }
