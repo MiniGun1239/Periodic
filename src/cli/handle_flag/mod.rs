@@ -1,49 +1,95 @@
+pub mod regular;
+pub mod special;
+
 use std::process::exit;
+use regular::{electron, grouping, mass, name, physical, symbol};
 use crate::cli::cli_args::CliArgs;
 
-pub mod name;
-pub mod symbol;
-pub mod mass;
-pub mod electron;
-pub mod physical;
-pub mod grouping;
+pub fn pass_to_handler(args: CliArgs) {
+    if let Some(_query) = args.query.as_ref() {
+        let query = _query.to_lowercase();
 
-pub fn handle(args: CliArgs) {
-    if args.query != None {
-        let number: u8 = args.query.unwrap();
-
-        if number < 1 || number > 119 {
-            println!("Number must be between 1 (H) and 119 (Uue)");
-            exit(1);
+        if query == "table" {
+            todo!(
+                "call special::table"
+            )
         }
 
-        println!("  Outputting for Element {}:", number);
-        println!("---");
+        let number: u8 = match query.parse::<u8>() {
+            Ok(num) => num,
+            Err(_) => {
+                eprintln!("Invalid number");
+                exit(1);
+            }
+        };
 
-        if args.name {
-            name::parse(number);
+        if !(1..=119).contains(&number) {
+            eprintln!("Number has to be between 1 (H) and 119 (Uue)");
         }
 
-        if args.symbol {
-            symbol::parse(number);
-        }
+        handle(number, args)
+    }
 
-        if args.mass {
-            mass::parse(number);
-        }
+    else {
+        handle_no_num(args);
 
-        if args.electron != None {
-            electron::parse(number, args.electron.unwrap().to_lowercase());
-        }
+        exit(0)
+    }
+}
 
-        if args.grouping != None {
-            grouping::parse(number, args.grouping.unwrap().to_lowercase());
-        }
+fn handle(number: u8, args: CliArgs) {
+    println!("  Outputting for Element {}:", number);
+    println!("---");
 
-        if args.physical_properties != None {
-            physical::parse(number, args.physical_properties.unwrap().to_lowercase())
-        }
+    if args.name {
+        name::parse(number);
+    }
 
-        exit(0);
+    if args.symbol {
+        symbol::parse(number);
+    }
+
+    if args.mass {
+        mass::parse(number);
+    }
+
+    if args.electron != None {
+        electron::parse(number, args.electron.unwrap().to_lowercase());
+    }
+
+    if args.grouping != None {
+        grouping::parse(number, args.grouping.unwrap().to_lowercase());
+    }
+
+    if args.physical_properties != None {
+        physical::parse(number, args.physical_properties.unwrap().to_lowercase())
+    }
+
+}
+
+fn handle_no_num(args: CliArgs) {
+    let mut reverse: bool = false;
+
+    if args.reverse {
+        reverse = true;
+    }
+
+    if args.sort != None {
+        if reverse {
+            todo!(
+                "call special::sort with reverse"
+            )
+        }
+        else {
+            todo!(
+                "call special::sort"
+            )
+        }
+    }
+
+    if args.table {
+        todo!(
+            "call special::table"
+        )
     }
 }
