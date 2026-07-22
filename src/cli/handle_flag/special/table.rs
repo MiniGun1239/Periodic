@@ -1,5 +1,5 @@
+use crate::output::special::table::normal_colored;
+
 fn table() {
-    todo!(
-        "call output::special::table"
-    )
+    normal_colored();
 }
