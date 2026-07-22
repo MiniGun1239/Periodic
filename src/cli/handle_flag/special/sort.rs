@@ -25,9 +25,7 @@ fn number(reverse: bool) {
 }
 
 fn mass(reverse: bool) {
-    todo!(
-        "call out_mass, passing reverse"
-    )
+    output::special::sort::mass(reverse);
 }
 
 
