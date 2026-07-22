@@ -78,7 +78,7 @@ fn out_mass(reverse: bool) {
         .collect();
 
     mass.sort_by(|b, a| a.1.partial_cmp(&b.1).unwrap_or(std::cmp::Ordering::Equal));
-    
+
     if reverse {
         mass.reverse();
     }
