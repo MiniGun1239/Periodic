@@ -4,10 +4,8 @@ pub fn name() {
     )
 }
 
-pub fn symbol() {
-    todo!(
-        "call out_symbol or out_symbol_reversed"
-    )
+pub fn symbol(reverse: bool) {
+    out_symbol(reverse);
 }
 
 pub fn number(reverse: bool) {
