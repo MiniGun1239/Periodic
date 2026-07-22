@@ -16,10 +16,8 @@ pub fn number() {
     )
 }
 
-pub fn mass() {
-    todo!(
-        "call out_mass or out_mass_reversed"
-    )
+pub fn mass(reverse: bool) {
+    out_mass(reverse);
 }
 
 
