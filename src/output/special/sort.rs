@@ -48,3 +48,30 @@ fn out_mass(reverse: bool) {
         "call output::special::special::sort::mass_reverse"
     )
 }
+
+
+// reversed output
+
+fn out_name_reversed() {
+    todo!(
+        "Sort all elements by name in reverse alphabetical order"
+    )
+}
+
+fn out_symbol_reversed() {
+    todo!(
+        "Sort all elements by symbol in reverse alphabetical order"
+    )
+}
+
+fn out_number_reversed() {
+    todo!(
+        "Sort all elements by atomic number in descending order"
+    )
+}
+
+fn out_mass_reversed() {
+    todo!(
+        "Sort all elements by mass in descending order"
+    )
+}
