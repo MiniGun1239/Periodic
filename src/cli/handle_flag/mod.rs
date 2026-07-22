@@ -74,11 +74,6 @@ fn handle(number: u8, args: CliArgs) {
 }
 
 fn handle_no_num(args: CliArgs) {
-    let mut reverse: bool = false;
-
-    if args.reverse {
-        reverse = true;
-    }
 
     if args.sort != None {
         if reverse {
