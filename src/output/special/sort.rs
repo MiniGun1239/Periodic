@@ -1,9 +1,7 @@
 use crate::details::element::Element;
 
-pub fn name() {
-    todo!(
-        "call out_name or out_name_reversed"
-    )
+pub fn name(reverse: bool) {
+    out_name(reverse);
 }
 
 pub fn symbol(reverse: bool) {
