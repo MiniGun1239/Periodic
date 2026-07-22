@@ -106,4 +106,3 @@ fn get_elements() -> Vec<Element> {
     let elements: Vec<Element> = elements_map.into_values().collect();
     elements
 }
-
