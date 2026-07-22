@@ -16,9 +16,7 @@ pub fn pass_to_handler(args: CliArgs) {
         let query = _query.to_lowercase();
 
         if query == "table" {
-            todo!(
-                "call special::table"
-            )
+            special::table::table();
         }
 
         let number: u8 = match query.parse::<u8>() {
