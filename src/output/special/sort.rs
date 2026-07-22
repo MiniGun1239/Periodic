@@ -97,7 +97,7 @@ fn get_names_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
         .collect()
 }
 
-fn get_symbols_with_index(elements: Vec<Element>) -> HashMap<u8, String> {
+fn get_symbols_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
     elements
         .iter()
         .map(|element| (element.atomic_number, element.symbol.clone()))
