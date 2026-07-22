@@ -7,9 +7,7 @@ pub fn parse(cli_args: CliArgs, sort_args: String, reverse: bool) {
 }
 
 fn name(reverse: bool) {
-    todo!(
-        "call out_name, passing reverse"
-    )
+    output::special::sort::name(reverse);
 }
 
 fn symbol(reverse: bool) {
