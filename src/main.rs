@@ -8,8 +8,7 @@ use crate::cli::parse::parse_flags;
 
 fn main() {
     let args = parse_flags();
-
-    println!("---");
+    
     pass_to_handler(args);
 
     return;
