@@ -7,9 +7,9 @@ use crate::cli::cli_args::CliArgs;
 use crate::output::special::logo;
 
 pub fn pass_to_handler(args: CliArgs) {
-    if args.logo {
-        ascii();
-        exit(0)
+    if args.logo || args.count.len() == 1 {
+        logo::ascii();
+        exit(0);
     }
 
     if let Some(_query) = args.query.as_ref() {
