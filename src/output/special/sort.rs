@@ -43,6 +43,14 @@ fn out_symbol(reverse: bool) {
 
     let mut symbols: Vec<(u8, String)> = get_symbols_with_index(elements);
 
+    symbols.sort_by(|a, b| {
+        if !reverse {
+            a.1.cmp(&b.1)
+        } else {
+            b.1.cmp(&a.1)
+        }
+    });
+
     for (num, symbol) in symbols {
         println!("{}: {}", num, symbol);
     }
