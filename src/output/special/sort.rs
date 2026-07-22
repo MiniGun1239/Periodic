@@ -91,7 +91,7 @@ fn out_mass(reverse: bool) {
 
 // helper
 
-fn sort_by_name_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
+fn get_names_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
     let out = elements
         .iter()
         .enumerate()
