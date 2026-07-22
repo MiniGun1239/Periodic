@@ -74,16 +74,7 @@ fn handle(number: u8, args: CliArgs) {
 fn handle_no_num(args: CliArgs) {
 
     if args.sort != None {
-        if reverse {
-            todo!(
-                "call special::sort with reverse"
-            )
-        }
-        else {
-            todo!(
-                "call special::sort"
-            )
-        }
+        special::sort::parse(args.sort.unwrap(), args.reverse);
     }
 
     if args.table {
