@@ -1,3 +1,4 @@
+use std::collections::HashMap;
 use crate::details::element::Element;
 
 pub fn name(reverse: bool) {
