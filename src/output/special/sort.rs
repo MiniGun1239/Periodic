@@ -44,7 +44,20 @@ fn out_number(reverse: bool) {
 }
 
 fn out_mass(reverse: bool) {
-    todo!(
-        "call output::special::special::sort::mass_reverse"
-    )
+    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+
+    let mut mass: Vec<(String, f64)> = elements
+        .iter()
+        .map(|element| (element.name.clone(), element.mass))
+        .collect();
+
+    mass.sort_by(|b, a| a.1.partial_cmp(&b.1).unwrap_or(std::cmp::Ordering::Equal));
+    
+    if reverse {
+        mass.reverse();
+    }
+
+    for (name, mass) in mass {
+        println!("{}: {}", name, mass);
+    }
 }
