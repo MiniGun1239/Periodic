@@ -13,9 +13,7 @@ fn name(reverse: bool) {
 }
 
 fn symbol(reverse: bool) {
-    todo!(
-        "call out_symbol, passing reverse"
-    )
+    output::special::sort::symbol(reverse);
 }
 
 fn number(reverse: bool) {
