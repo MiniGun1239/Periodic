@@ -100,3 +100,13 @@ fn sort_by_name_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
 
     out
 }
+
+fn get_elements() -> Vec<Element> {
+    let json_data = include_str!("../../details/element_info.json");
+
+    let elements_map: HashMap<u8, Element> = serde_json::from_str(json_data).unwrap();
+
+    let elements: Vec<Element> = elements_map.into_values().collect();
+    elements
+}
+
