@@ -95,3 +95,16 @@ fn out_mass(reverse: bool) {
         println!("{}: {}", name, mass);
     }
 }
+
+
+// helper
+
+fn sort_by_name_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
+    let out = elements
+        .iter()
+        .enumerate()
+        .map(|(index, element)| ((index + 1) as u8, element.name.clone()))
+        .collect();
+
+    out
+}
