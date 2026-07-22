@@ -21,7 +21,7 @@ pub fn mass(reverse: bool) {
 // output functions
 
 fn out_name(reverse: bool) {
-    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+    let elements: Vec<Element> = get_elements();
 
     let mut names: Vec<(u8, String)> = sort_by_name_with_index(elements);
 
