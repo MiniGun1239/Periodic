@@ -97,6 +97,13 @@ fn get_names_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
         .collect()
 }
 
+fn get_symbols_with_index(elements: Vec<Element>) -> HashMap<u8, String> {
+    elements
+        .iter()
+        .map(|element| (element.atomic_number, element.symbol.clone()))
+        .collect()
+}
+
 fn get_elements() -> Vec<Element> {
     let json_data = include_str!("../../details/element_info.json");
 
