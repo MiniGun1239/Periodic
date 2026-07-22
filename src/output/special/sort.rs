@@ -37,7 +37,7 @@ pub fn symbol_reversed() {
     )
 }
 
-pub fn number_reversed() {
+fn out_number_reversed() {
     todo!(
         "Sort all elements by atomic number in descending order"
     )
