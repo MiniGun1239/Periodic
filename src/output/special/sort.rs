@@ -56,7 +56,7 @@ fn out_symbol(reverse: bool) {
 }
 
 fn out_number(reverse: bool) {
-    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+    let elements: Vec<Element> = get_elements();
 
     let mut numbers: Vec<(u8, String)> = get_names_with_index(elements);
 
