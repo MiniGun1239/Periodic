@@ -78,8 +78,6 @@ fn handle_no_num(args: CliArgs) {
     }
 
     if args.table {
-        todo!(
-            "call special::table"
-        )
+        special::table::table();
     }
 }
