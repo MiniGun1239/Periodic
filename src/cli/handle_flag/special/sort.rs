@@ -32,7 +32,9 @@ fn help() {
 }
 
 fn incomplete() {
-    todo!(
-        "print incomplete, then call help"
-    )
+    println!("Incorrect or no arguments provided");
+    println!(" -- -- -- -- -- -- -- -- -- -- -- ");
+    println!();
+
+    help();
 }
