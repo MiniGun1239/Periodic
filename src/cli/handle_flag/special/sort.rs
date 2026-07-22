@@ -26,9 +26,9 @@ fn mass(reverse: bool) {
 // special functions
 
 fn help() {
-    todo!(
-        "print help information"
-    )
+    println!("List of Available Options:");
+
+    todo!()
 }
 
 fn incomplete() {
