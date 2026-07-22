@@ -31,7 +31,7 @@ fn out_name(reverse: bool) {
     }
 
     for (num, name) in names {
-        println!("{}: {}", name, num);
+        println!("{}. {}", num, name);
     }
 }
 
