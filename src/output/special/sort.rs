@@ -70,7 +70,7 @@ fn out_number(reverse: bool) {
 }
 
 fn out_mass(reverse: bool) {
-    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+    let elements: Vec<Element> = get_elements();
 
     let mut mass: Vec<(String, f64)> = elements
         .iter()
