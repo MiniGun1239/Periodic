@@ -4,7 +4,7 @@ pub mod special;
 use std::process::exit;
 use regular::{electron, grouping, mass, name, physical, symbol};
 use crate::cli::cli_args::CliArgs;
-use crate::output::special::logo::ascii;
+use crate::output::special::logo;
 
 pub fn pass_to_handler(args: CliArgs) {
     if args.logo {
