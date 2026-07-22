@@ -12,7 +12,7 @@ pub fn symbol() {
 
 pub fn number() {
     todo!(
-        "Sort all elements by atomic number in ascending order"
+        "call out_number or out_number_reversed"
     )
 }
 
