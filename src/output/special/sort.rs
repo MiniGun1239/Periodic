@@ -62,11 +62,7 @@ fn out_symbol(reverse: bool) {
 fn out_number(reverse: bool) {
     let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
 
-    let mut numbers: Vec<(u8, String)> = elements
-        .iter()
-        .enumerate()
-        .map(|(index, element)| ((index + 1) as u8, element.name.clone()))
-        .collect();
+    let mut numbers: Vec<(u8, String)> = sort_by_name_with_index(elements);
 
     if reverse {
         numbers.reverse();
