@@ -31,7 +31,7 @@ pub fn name_reversed() {
     )
 }
 
-pub fn symbol_reversed() {
+fn out_symbol_reversed() {
     todo!(
         "Sort all elements by symbol in reverse alphabetical order"
     )
