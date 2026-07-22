@@ -32,9 +32,23 @@ fn out_name(reverse: bool) {
 }
 
 fn out_symbol(reverse: bool) {
-    todo!(
-        "call output::special::sort::symbol or symbol_reversed"
-    )
+    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+
+    let mut symbols: Vec<(u8, String)> = elements
+        .iter()
+        .enumerate()
+        .map(|(index, element)| ((index + 1) as u8, element.symbol.clone()))
+        .collect();
+
+    symbols.sort_by(|a, b| a.1.cmp(&b.1));
+
+    if reverse {
+        symbols.reverse();
+    }
+
+    for (num, symbol) in symbols {
+        println!("{}: {}", num, symbol);
+    }
 }
 
 fn out_number(reverse: bool) {
