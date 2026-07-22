@@ -25,7 +25,7 @@ pub fn mass() {
 
 // Reversed sort order
 
-pub fn name_reversed() {
+fn out_name_reversed() {
     todo!(
         "Sort all elements by name in reverse alphabetical order"
     )
