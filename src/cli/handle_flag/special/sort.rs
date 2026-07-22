@@ -1,4 +1,3 @@
-use crate::cli::cli_args::CliArgs;
 use crate::output;
 
 pub fn parse(cli_args: CliArgs, sort_args: String, reverse: bool) {
