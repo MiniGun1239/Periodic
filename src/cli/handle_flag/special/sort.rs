@@ -1,51 +1,73 @@
 use crate::cli::cli_args::CliArgs;
 
 pub fn parse(cli_args: CliArgs, sort_args: String, reverse: bool) {
-    todo!()
+    todo!(
+        "Parse everything"
+    )
 }
 
 fn name(reverse: bool) {
-    todo!()
+    todo!(
+        "call out_name, passing reverse"
+    )
 }
 
 fn symbol(reverse: bool) {
-    todo!()
+    todo!(
+        "call out_symbol, passing reverse"
+    )
 }
 
 fn number(reverse: bool) {
-    todo!()
+    todo!(
+        "call out_number, passing reverse"
+    )
 }
 
 fn mass(reverse: bool) {
-    todo!()
+    todo!(
+        "call out_mass, passing reverse"
+    )
 }
 
 
 // special functions
 
 fn help() {
-    todo!()
+    todo!(
+        "print help information"
+    )
 }
 
 fn incomplete() {
-    todo!()
+    todo!(
+        "print incomplete, then call help"
+    )
 }
 
 
 // output functions
 
 fn out_name(reverse: bool) {
-    todo!()
+    todo!(
+        "call output::special::sort::name or name_reversed"
+    )
 }
 
 fn out_symbol(reverse: bool) {
-    todo!()
+    todo!(
+        "call output::special::sort::symbol or symbol_reversed"
+    )
 }
 
 fn out_number(reverse: bool) {
-    todo!()
+    todo!(
+        "call output::special::sort::number or number_reversed"
+    )
 }
 
 fn out_mass(reverse: bool) {
-    todo!()
+    todo!(
+        "call output::special::special::sort::mass_reverse"
+    )
 }
