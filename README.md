@@ -6,7 +6,7 @@
 
 # Periodic
 
-[![Time Spent](badge)](https://hackatime.hackclub.com/api/v1/badge/U0AJWQ44PGQ/MiniGun1239/Periodic)
+[![Time Spent](https://hackatime.hackclub.com/api/v1/badge/U0AJWQ44PGQ/MiniGun1239/Periodic)](https://hackatime.hackclub.com/my/projects/Periodic)
 
 > Fun with chemistry and statistics
 
