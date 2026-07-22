@@ -39,7 +39,7 @@ fn out_name(reverse: bool) {
 }
 
 fn out_symbol(reverse: bool) {
-    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+    let elements: Vec<Element> = get_elements();
 
     let mut symbols: Vec<(u8, String)> = elements
         .iter()
