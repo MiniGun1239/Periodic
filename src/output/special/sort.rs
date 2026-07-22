@@ -23,7 +23,7 @@ pub fn mass(reverse: bool) {
 fn out_name(reverse: bool) {
     let elements: Vec<Element> = get_elements();
 
-    let mut names: Vec<(u8, String)> = sort_by_name_with_index(elements);
+    let mut names: Vec<(u8, String)> = get_names_with_index(elements);
 
     names.sort_by(|a, b| a.1.cmp(&b.1));
 
