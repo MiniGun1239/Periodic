@@ -73,10 +73,7 @@ fn out_number(reverse: bool) {
 fn out_mass(reverse: bool) {
     let elements: Vec<Element> = get_elements();
 
-    let mut mass: Vec<(String, f64)> = elements
-        .iter()
-        .map(|element| (element.name.clone(), element.mass))
-        .collect();
+    let mut mass: Vec<(String, f64)> = get_mass_with_name(elements);
 
     mass.sort_by(|b, a| a.1.partial_cmp(&b.1).unwrap_or(std::cmp::Ordering::Equal));
 
