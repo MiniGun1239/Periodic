@@ -38,9 +38,21 @@ fn out_symbol(reverse: bool) {
 }
 
 fn out_number(reverse: bool) {
-    todo!(
-        "call output::special::sort::number or number_reversed"
-    )
+    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+
+    let mut numbers: Vec<(u8, String)> = elements
+        .iter()
+        .enumerate()
+        .map(|(index, element)| ((index + 1) as u8, element.name.clone()))
+        .collect();
+
+    if reverse {
+        numbers.reverse();
+    }
+
+    for (num, name) in numbers {
+        println!("{}: {}", num, name);
+    }
 }
 
 fn out_mass(reverse: bool) {
