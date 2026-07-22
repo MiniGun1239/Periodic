@@ -1,6 +1,6 @@
 pub fn name() {
     todo!(
-        "Sort all elements by name in alphabetical order"
+        "call out_name or out_name_reversed"
     )
 }
 
