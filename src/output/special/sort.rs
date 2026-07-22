@@ -18,7 +18,7 @@ pub fn number() {
 
 pub fn mass() {
     todo!(
-        "Sort all elements by mass in ascending order"
+        "call out_mass or out_mass_reversed"
     )
 }
 
