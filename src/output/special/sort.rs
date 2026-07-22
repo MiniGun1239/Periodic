@@ -6,7 +6,7 @@ pub fn name() {
 
 pub fn symbol() {
     todo!(
-        "Sort all elements by symbol in alphabetical order"
+        "call out_symbol or out_symbol_reversed"
     )
 }
 
