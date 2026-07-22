@@ -26,7 +26,7 @@ fn out_name(reverse: bool) {
     let mut names: Vec<(u8, String)> = get_names_with_index(elements);
 
     names.sort_by(|a, b| {
-        if reverse {
+        if !reverse {
             a.1.cmp(&b.1)
         } else {
             b.1.cmp(&a.1)
