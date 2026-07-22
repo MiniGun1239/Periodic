@@ -94,11 +94,8 @@ fn out_mass(reverse: bool) {
 fn get_names_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
     elements
         .iter()
-        .enumerate()
-        .map(|(index, element)| ((index + 1) as u8, element.name.clone()))
-        .collect();
-
-    out
+        .map(|element| (element.atomic_number, element.name.clone()))
+        .collect()
 }
 
 fn get_elements() -> Vec<Element> {
