@@ -43,7 +43,7 @@ pub fn number_reversed() {
     )
 }
 
-pub fn mass_reversed() {
+fn out_mass_reversed() {
     todo!(
         "Sort all elements by mass in descending order"
     )
