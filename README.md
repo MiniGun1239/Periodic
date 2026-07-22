@@ -6,6 +6,8 @@
 
 # Periodic
 
+https://hackatime.hackclub.com/api/v1/badge/U0AJWQ44PGQ/MiniGun1239/Periodic
+
 > Fun with chemistry and statistics
 
 Fun chem app ("Fun" in very, very deep quotes, and very subjective)
