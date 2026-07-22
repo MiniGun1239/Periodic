@@ -109,6 +109,13 @@ fn get_symbols_with_index(elements: Vec<Element>) -> Vec<(u8, String)> {
         .collect()
 }
 
+fn get_mass_with_name(elements: Vec<Element>) -> Vec<(String, f64)> {
+    elements
+        .iter()
+        .map(|element| (element.name.clone(), element.mass))
+        .collect()
+}
+
 fn get_elements() -> Vec<Element> {
     let json_data = include_str!("../../details/element_info.json");
 
