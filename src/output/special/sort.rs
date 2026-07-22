@@ -10,10 +10,8 @@ pub fn symbol() {
     )
 }
 
-pub fn number() {
-    todo!(
-        "call out_number or out_number_reversed"
-    )
+pub fn number(reverse: bool) {
+    out_number(reverse);
 }
 
 pub fn mass(reverse: bool) {
