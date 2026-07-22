@@ -1,9 +1,11 @@
 use crate::output;
 
-pub fn parse(cli_args: CliArgs, sort_args: String, reverse: bool) {
-    todo!(
-        "Parse everything"
-    )
+pub fn parse(args: String, reverse: bool) {
+    if args == "h" || args == "help" {
+        help()
+    }
+
+    todo!()
 }
 
 fn name(reverse: bool) {
