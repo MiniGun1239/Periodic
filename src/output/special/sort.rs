@@ -75,7 +75,13 @@ fn out_mass(reverse: bool) {
 
     let mut mass: Vec<(String, f64)> = get_mass_with_name(elements);
 
-    mass.sort_by(|b, a| a.1.partial_cmp(&b.1).unwrap_or(std::cmp::Ordering::Equal));
+    mass.sort_by(|b, a| {
+        if reverse {
+            a.1.partial_cmp(&b.1).unwrap_or(std::cmp::Ordering::Equal)
+        } else {
+            b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal)
+        }
+    });
 
     if reverse {
         mass.reverse();
