@@ -26,9 +26,23 @@ pub fn mass() {
 // output functions
 
 fn out_name(reverse: bool) {
-    todo!(
-        "call output::special::sort::name or name_reversed"
-    )
+    let elements: Vec<Element> = serde_json::from_str("../../details/element_info.json").unwrap();
+
+    let mut names: Vec<(u8, String)> = elements
+        .iter()
+        .enumerate()
+        .map(|(index, element)| ((index + 1) as u8, element.name.clone()))
+        .collect();
+
+    names.sort_by(|a, b| a.1.cmp(&b.1));
+
+    if reverse {
+        names.reverse();
+    }
+
+    for (num, name) in names {
+        println!("{}: {}", name, num);
+    }
 }
 
 fn out_symbol(reverse: bool) {
