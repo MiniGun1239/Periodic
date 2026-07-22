@@ -41,13 +41,7 @@ fn out_name(reverse: bool) {
 fn out_symbol(reverse: bool) {
     let elements: Vec<Element> = get_elements();
 
-    let mut symbols: Vec<(u8, String)> = get_symbols_with_index(elements)
-
-    symbols.sort_by(|a, b| a.1.cmp(&b.1));
-
-    if reverse {
-        symbols.reverse();
-    }
+    let mut symbols: Vec<(u8, String)> = get_symbols_with_index(elements);
 
     for (num, symbol) in symbols {
         println!("{}: {}", num, symbol);
