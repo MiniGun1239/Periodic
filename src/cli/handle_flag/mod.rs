@@ -64,7 +64,7 @@ fn handle(number: u8, args: CliArgs) {
     }
 
     if args.electron != None {
-        electron::parse(number, args.electron.unwrap().to_lowercase());
+        regular::electron::parse(number, args.electron.unwrap().to_lowercase());
     }
 
     if args.grouping != None {
