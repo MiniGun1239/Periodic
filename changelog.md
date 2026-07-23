@@ -28,3 +28,20 @@
 * **Added:** displaying the melting point of an element.
 * **Added:** displaying the density of an element.
 * **Added:** displaying the phase of an element.
+
+
+---
+### Release - 1.0.0 (23-07-2026)
+
+---
+* **Added:** sorting all elements by name
+* **Added:** sorting all elements by symbol
+* **Added:** sorting all elements by atomic number
+* **Added:** sorting all elements by mass
+
+* **Added:** displaying the periodic table
+* **Added:** displaying the logo (just ascii art letters)
+
+
+* **Changed:** parsing logic
+* **Changed:** a lot in the backend
