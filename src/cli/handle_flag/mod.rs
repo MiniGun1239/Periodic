@@ -78,6 +78,7 @@ fn handle(number: u8, args: CliArgs) {
 }
 
 fn handle_no_num(args: CliArgs) {
+    check_illegal_arguments(&args);
 
     if args.sort != None {
         special::sort::parse(args.sort.unwrap(), args.reverse);
