@@ -44,22 +44,26 @@ fn out_boil(_number: u8, element: Option<Element>) {
     let output = element.unwrap().boiling_point;
 
     println!("Boiling point: {} Kelvin", output);
+    println!("---");
 }
 
 fn out_melt(_number: u8, element: Option<Element>) {
     let output = element.unwrap().melting_point;
 
     println!("Melting point: {} Kelvin", output);
+    println!("---");
 }
 
 fn out_density(_number: u8, element: Option<Element>) {
     let output = element.unwrap().density;
 
     println!("Density at STP: {} g/cm³", output);
+    println!("---");
 }
 
 fn out_phase(_number: u8, element: Option<Element>) {
     let output = element.unwrap().phase;
 
     println!("Phase at STP: {}", output);
+    println!("---");
 }
