@@ -1,5 +1,27 @@
 use crate::output;
 
+static  NAME_KEYWORDS: [&str; 3] = [
+    "name", "by_name", "alphabetical"
+];
+
+static SYMBOL_KEYWORDS: [&str; 5] = [
+    "symbol", "by_symbol",
+    "sym", "by_sym",
+    "s"
+];
+
+static NUMBER_KEYWORDS: [&str; 5] = [
+    "number", "by_number",
+    "num", "by_num",
+    "n"
+];
+
+static MASS_KEYWORDS: [&str; 3] = [
+    "mass", "by_mass",
+    "m"
+];
+
+
 pub fn parse(args: String, reverse: bool) {
     if args == "h" || args == "help" {
         help()
