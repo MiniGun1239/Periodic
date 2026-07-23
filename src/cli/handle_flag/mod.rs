@@ -87,3 +87,29 @@ fn handle_no_num(args: CliArgs) {
         special::table::table();
     }
 }
+
+fn check_illegal_arguments(args: &CliArgs) {
+    if args.name {
+        println!("Usage: periodic <atomic_number> --name");
+    }
+
+    if args.symbol {
+        println!("Usage: periodic <atomic_number> --symbol");
+    }
+
+    if args.mass {
+        println!("Usage: periodic <atomic_number> --mass");
+    }
+
+    if args.electron != None {
+        electron::parse(0, "help".parse().unwrap());
+    }
+
+    if args.grouping != None {
+        grouping::parse(0, "help".parse().unwrap());
+    }
+
+    if args.physical_properties != None {
+        physical::parse(0, "help".parse().unwrap());
+    }
+}
