@@ -27,7 +27,7 @@ fn mass(reverse: bool) {
 
 // special functions
 
-fn help() {
+pub(crate) fn help() {
     println!("List of Available Options:");
 
     todo!()
