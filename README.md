@@ -7,6 +7,7 @@
 # Periodic
 
 [![Time Spent](https://hackatime.hackclub.com/api/v1/badge/U0AJWQ44PGQ/MiniGun1239/Periodic)](https://hackatime.hackclub.com/my/projects/Periodic)
+[![Periodic](https://img.shields.io/badge/GitHub-Periodic-green?style=plastic)](https://www.github.com/MiniGun1239/Periodic)
 
 > Fun with chemistry and statistics
 
