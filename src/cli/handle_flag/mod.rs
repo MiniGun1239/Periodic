@@ -106,7 +106,7 @@ fn check_illegal_arguments(args: &CliArgs) {
     }
 
     if args.grouping != None {
-        grouping::parse(0, "help".parse().unwrap());
+        regular::grouping::parse(0, "help".parse().unwrap());
     }
 
     if args.physical_properties != None {
