@@ -74,7 +74,7 @@ Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/rel
 or run this:
 
 ```shell
-curl -L https://github.com/MiniGun1239/Periodic/releases/download/Beta/periodic-beta-0.1.0 -o periodic
+curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0 -o periodic
 ```
 > Always check what you are running, don't run random commands you find on the internet.
 
