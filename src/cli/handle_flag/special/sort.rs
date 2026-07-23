@@ -51,8 +51,18 @@ fn mass(reverse: bool) {
 
 pub(crate) fn help() {
     println!("List of Available Options:");
+    println!("Usage: periodic --sort [OPTIONS]");
+    println!("or");
+    println!("Usage: periodic --sort --reverse [OPTIONS]");
+    println!(" ---");
 
-    todo!()
+    print!  ("  h, help                 Prints help information\n\n");
+
+    println!("     name                 Sorts by name alphabetically");
+    println!("  s, symbol               Sorts by symbol alphabetically\n");
+
+    println!("  n, number               Sorts by atomic number in ascending order");
+    println!("  m, mass                 Sorts by atomic mass in ascending order");
 }
 
 fn incomplete() {
