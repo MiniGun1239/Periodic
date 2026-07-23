@@ -27,7 +27,25 @@ pub fn parse(args: String, reverse: bool) {
         help()
     }
 
-    todo!()
+    else if NAME_KEYWORDS.contains(&&*args) {
+        name(reverse)
+    }
+
+    else if SYMBOL_KEYWORDS.contains(&&*args) {
+        symbol(reverse)
+    }
+
+    else if NUMBER_KEYWORDS.contains(&&*args) {
+        number(reverse)
+    }
+
+    else if MASS_KEYWORDS.contains(&&*args) {
+        mass(reverse)
+    }
+
+    else {
+        incomplete()
+    }
 }
 
 fn name(reverse: bool) {
