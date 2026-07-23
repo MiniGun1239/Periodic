@@ -31,7 +31,7 @@ pub fn pass_to_handler(args: CliArgs) {
         }
 
         if args.sort != None {
-            special::sort::help()
+            special::sort::parse("help".to_string(), false)
         } else if args.table {
             special::table::table();
         }
