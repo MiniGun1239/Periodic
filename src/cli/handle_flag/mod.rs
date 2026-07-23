@@ -22,7 +22,7 @@ pub fn pass_to_handler(args: CliArgs) {
         let number: u8 = match query.parse::<u8>() {
             Ok(num) => num,
             Err(_) => {
-                eprintln!("Invalid number");
+                eprintln!("Invalid number, query must be a number between 1 and 119");
                 exit(1);
             }
         };
