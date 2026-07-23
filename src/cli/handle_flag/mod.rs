@@ -72,7 +72,7 @@ fn handle(number: u8, args: CliArgs) {
     }
 
     if args.physical_properties != None {
-        physical::parse(number, args.physical_properties.unwrap().to_lowercase())
+        regular::physical::parse(number, args.physical_properties.unwrap().to_lowercase())
     }
 
 }
