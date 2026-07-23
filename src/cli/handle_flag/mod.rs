@@ -39,6 +39,12 @@ pub fn pass_to_handler(args: CliArgs) {
 
         exit(0)
     }
+
+    else {
+        handle_no_num(args);
+
+        exit(0)
+    }
 }
 
 fn handle(number: u8, args: CliArgs) {
