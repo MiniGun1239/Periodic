@@ -67,7 +67,7 @@ fn mass(reverse: bool) {
 
 // special functions
 
-pub(crate) fn help() {
+fn help() {
     println!("List of Available Options:");
     println!("Usage: periodic --sort [OPTIONS]");
     println!("or");
