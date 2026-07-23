@@ -102,7 +102,7 @@ fn check_illegal_arguments(args: &CliArgs) {
     }
 
     if args.electron != None {
-        electron::parse(0, "help".parse().unwrap());
+        regular::electron::parse(0, "help".parse().unwrap());
     }
 
     if args.grouping != None {
