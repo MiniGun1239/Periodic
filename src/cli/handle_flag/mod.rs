@@ -7,7 +7,7 @@ use crate::cli::cli_args::CliArgs;
 use crate::output::special::logo;
 
 pub fn pass_to_handler(args: CliArgs) {
-    if args.logo || args.count.len() == 0 {
+    if args.logo {
         logo::ascii();
         exit(0);
     }
