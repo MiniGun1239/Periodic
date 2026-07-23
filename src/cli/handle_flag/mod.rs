@@ -68,7 +68,7 @@ fn handle(number: u8, args: CliArgs) {
     }
 
     if args.grouping != None {
-        grouping::parse(number, args.grouping.unwrap().to_lowercase());
+        regular::grouping::parse(number, args.grouping.unwrap().to_lowercase());
     }
 
     if args.physical_properties != None {
