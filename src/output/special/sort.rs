@@ -83,10 +83,6 @@ fn out_mass(reverse: bool) {
         }
     });
 
-    if reverse {
-        mass.reverse();
-    }
-
     for (name, mass) in mass {
         println!("{}: {}", name, mass);
     }
