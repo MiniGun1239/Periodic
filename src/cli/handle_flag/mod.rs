@@ -56,7 +56,7 @@ fn handle(number: u8, args: CliArgs) {
     }
 
     if args.symbol {
-        symbol::parse(number);
+        regular::symbol::parse(number);
     }
 
     if args.mass {
