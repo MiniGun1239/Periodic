@@ -40,10 +40,6 @@ pub fn pass_to_handler(args: CliArgs) {
         handle(number, args);
     }
 
-    else if args.sort != None {
-        special::sort::help()
-    }
-
     else {
         handle_no_num(args);
 
