@@ -22,8 +22,8 @@ Fun chem app ("Fun" in very, very deep quotes, and very subjective)
     *   Electron Configuration
     *   Grouping info
     *   Physical Properties at STP
-*   **Display the periodic table:** (Not yet, TBA)
-*   **Sort elements based on properties:** (Not yet, TBA)
+*   **Display the periodic table**
+*   **Sort elements based on properties:**
     *   Alphabetical Order of name and symbol _(and inverse alphabetical order)_
     *   Increasing Order in Mass, Density, Boiling point, Melting point _(and decreasing)_
     *   etc
