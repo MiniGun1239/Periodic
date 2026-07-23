@@ -52,7 +52,7 @@ fn handle(number: u8, args: CliArgs) {
     println!("---");
 
     if args.name {
-        name::parse(number);
+        regular::name::parse(number);
     }
 
     if args.symbol {
