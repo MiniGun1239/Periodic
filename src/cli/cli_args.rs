@@ -13,8 +13,6 @@ pub struct CliArgs {
     )]
     pub(crate) query: Option<String>,
 
-    pub(crate) count: Vec<String>,
-
     /// Print name of element
     #[arg(
         short = 'n',
