@@ -31,7 +31,13 @@ pub fn pass_to_handler(args: CliArgs) {
             eprintln!("Number has to be between 1 (H) and 119 (Uue)");
         }
 
-        handle(number, args)
+        if args.sort != None {
+            special::sort::help()
+        } else if args.table {
+            special::table::table();
+        }
+
+        handle(number, args);
     }
 
     else if args.sort != None {
