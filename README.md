@@ -104,5 +104,5 @@ Done!, add to path to run anywhere or run like this:
    ```
 
 ## Contributors
-*   **[Me✨✨](https://github.com/MiniGun1239)**
+*   **[![Me✨✨](https://img.shields.io/badge/GitHub-MiniGun1239-orange?style=plastic)](https://www.github.com/MiniGun1239)**
 *   **TBA (no one else yet 🥹)**
