@@ -60,7 +60,7 @@ fn handle(number: u8, args: CliArgs) {
     }
 
     if args.mass {
-        mass::parse(number);
+        regular::mass::parse(number);
     }
 
     if args.electron != None {
