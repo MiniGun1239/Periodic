@@ -61,9 +61,13 @@ fn out_number(reverse: bool) {
 
     let mut numbers: Vec<(u8, String)> = get_names_with_index(elements);
 
-    if reverse {
-        numbers.reverse();
-    }
+    numbers.sort_by(|a, b| {
+        if !reverse {
+            a.0.cmp(&b.0)
+        } else {
+            b.0.cmp(&a.0)
+        }
+    });
 
     for (num, name) in numbers {
         println!("{}: {}", num, name);
