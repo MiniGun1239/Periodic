@@ -16,6 +16,7 @@ pub fn pass_to_handler(args: CliArgs) {
 
         if query == "table" {
             special::table::table();
+            exit(0);
         }
 
         let number: u8 = match query.parse::<u8>() {
