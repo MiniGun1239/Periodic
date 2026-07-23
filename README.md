@@ -55,7 +55,7 @@ Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/rel
 Or run this:
 
 ```shell
-curl -L https://github.com/MiniGun1239/Periodic/releases/download/Beta/periodic-beta-0.1.0 -o periodic
+curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0 -o periodic
 chmod +x periodic
 ```
 
