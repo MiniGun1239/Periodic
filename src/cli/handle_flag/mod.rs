@@ -110,6 +110,6 @@ fn check_illegal_arguments(args: &CliArgs) {
     }
 
     if args.physical_properties != None {
-        physical::parse(0, "help".parse().unwrap());
+        regular::physical::parse(0, "help".parse().unwrap());
     }
 }
