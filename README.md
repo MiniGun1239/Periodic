@@ -83,6 +83,11 @@ Done!, add to path to run anywhere or run like this:
 ./periodic -V
 ```
 
+### Video demonstration:  
+
+![YouTube](https://youtu.be/nsVz-hxfFCM)
+
+
 ## Building from Source
 
 1. **Pre-requisites:**  
