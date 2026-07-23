@@ -106,3 +106,5 @@ Done!, add to path to run anywhere or run like this:
 ## Contributors
 *   **[![Me✨✨](https://img.shields.io/badge/GitHub-MiniGun1239-orange?style=plastic)](https://www.github.com/MiniGun1239)**
 *   **TBA (no one else yet 🥹)**
+
+> Coded and tested in Arch Linux, should work in any distro and probably windows as well.
