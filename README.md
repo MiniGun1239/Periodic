@@ -20,6 +20,8 @@ Fun chem app ("Fun" in very, very deep quotes, and very subjective)
 *   **Lookup:** Gives some basic information about elements like:
     *   Name
         * ```periodic <atomic_number> -n``` outputs name of element
+    *   Symbol
+        * ```periodic <atomic_number> -s``` outputs symbol of element
     *   Atomic Mass
         * ```periodic <atomic_number> -m``` outputs mass of element
     *   Electron Configuration
@@ -135,3 +137,9 @@ Not Supported
 *   **TBA (no one else yet 🥹)**
 
 > Coded and tested in Arch Linux, should work in any distro.
+
+
+## Examples
+
+#### Name:  
+```periodic 1 -n``` outputs ```hydrogen```
