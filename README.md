@@ -80,8 +80,8 @@ Not Supported
 
 ### Video demonstration:  
 
-![YouTube](https://youtu.be/nsVz-hxfFCM)
-
+* [Demonstration](https://youtu.be/nsVz-hxfFCM)
+* [How to Download](https://youtu.be/rQDhgZfQ-Zk)
 
 ## Building from Source
 
