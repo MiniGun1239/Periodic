@@ -76,22 +76,7 @@ Done!, add to path to run anywhere or run from home like:
 
 #### Windows
 
-Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/releases)
-
->**Note:** The name of the executable will be "periodic-*", where * is the version number,
-> remember to type the full name when executing, or rename it from "periodic-*" to "periodic"
-
-Or download from command line, like this:
-
-```shell
-curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0 -o periodic
-```
-> Always check what you are running, don't run random commands you find on the internet.
-
-Done!, add to path to run anywhere or run like this:
-```shell
-./periodic -V
-```
+Not Supported yet
 
 ### Video demonstration:  
 
