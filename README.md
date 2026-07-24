@@ -139,6 +139,232 @@ Not Supported
 > Coded and tested in Arch Linux, should work in any distro.
 
 
-### Examples
+### [Examples](https://github.com/MiniGun1239/Periodic/tree/main/Examples)
 
-[Examples/](https://github.com/MiniGun1239/Periodic/tree/main/Examples)
+#### Name
+
+```shell
+$ periodic -n 1
+  Outputting for Element 1:
+---
+  Name: Hydrogen
+---
+```
+```shell
+$ periodic -n 6
+  Outputting for Element 6:
+---
+  Name: Carbon
+---
+```
+```shell
+$ periodic -n 92
+  Outputting for Element 92:
+---
+  Name: Uranium
+---
+```
+
+#### Mass
+
+```shell
+$ periodic -m 1
+  Outputting for Element 1:
+---
+  Average Mass: 1.008u
+---
+```
+```shell
+$ periodic -m 6
+  Outputting for Element 6:
+---
+  Average Mass: 12.011u
+---
+```
+```shell
+$ periodic -m 92
+  Outputting for Element 92:
+---
+  Average Mass: 238.028913u
+---
+```
+
+#### Symbol
+
+```shell
+$ periodic -s 1
+  Outputting for Element 1:
+---
+  Symbol: H
+---
+```
+```shell
+$ periodic -s 119
+  Outputting for Element 119:
+---
+  Symbol: Uue
+---
+```
+```shell
+$ periodic -s 54
+  Outputting for Element 54:
+---
+  Symbol: Xe
+---
+```
+
+#### Electron
+
+```shell
+$ periodic -e help
+List of Available Options:
+Usage: periodic <ATOMIC_NUMBER> --electron [OPTIONS]
+ ---
+  h , help                 Prints help information
+
+  bc, bohr-config          Prints the Bohr Configuration
+  qc, quantum-config       Prints the Quantum Configuration
+  sc, semantic-config      Prints the Semantic Configuration
+
+  v , valence              Prints the Valence Information
+  ie, ionization-energy    Prints the ionization Energy
+  ea, electron-affinity    Prints the Electron Affinity
+
+  a , all                  Prints all of the above
+```
+```shell
+$ periodic 1 -e bc
+  Outputting for Element 1:
+---
+  Bohr configuration:
+  1
+---
+```
+```shell
+$ periodic 87 -e all
+  Outputting for Element 87:
+---
+  Quantum Configuration:
+  1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s1
+---
+  Bohr configuration:
+  2, 8, 18, 32, 18, 8, 1
+---
+  Semantic configuration:
+  [Rn] 7s1
+---
+  First Ionization Energy:
+  380 Joules
+---
+  Electron Affinity:
+  46.89 Joules
+---
+  Valence Information:
+  Number of electrons in last shell filled: 1
+  Electrons in the last (7th) shell:  1
+---
+```
+
+#### Physcial Properties
+
+```shell
+$ periodic -p help
+List of Available Options:
+Usage: periodic <ATOMIC_NUMBER> --physical [OPTIONS]
+ ---
+  h, help             Show this help message
+
+  b, boiling-point    Prints boiling point of element
+  m, melting-point    Prints melting point of element
+  d, density          Prints density of element at STP
+  p, phase            Prints phase of element at STP
+```
+```shell
+$ periodic -p d 54
+  Outputting for Element 54:
+---
+  Density at STP: 5.894 g/cm³
+---
+```
+```shell
+$ periodic -p all 86
+  Outputting for Element 86:
+---
+  Boiling point: 211.5 Kelvin
+---
+  Melting point: 202 Kelvin
+---
+  Density at STP: 9.73 g/cm³
+---
+  Phase at STP: Gas
+---
+```
+
+#### Grouping
+
+```shell
+$ periodic -g help
+List of Available Options:
+Usage: periodic <ATOMIC_NUMBER> --grouping [OPTIONS]
+ ---
+  h, help         Prints help information
+
+  c, category     Prints category of element
+
+  g, group        Prints group of element
+  p, period       Prints period of element
+
+  b, block        Prints block of element
+```
+```shell
+$ periodic -g g 8
+  Outputting for Element 8:
+---
+  Group: 16
+---
+```
+```shell
+  Outputting for Element 75:
+---
+  Category: transition metal
+---
+  Group: 7
+---
+  Period: 6
+---
+  Block: d
+---
+```
+
+#### Table
+
+```shell
+$ periodic table
+---
+    H                                                           He
+  [s-block]                                      [--- p-block ---]
+    Li Be                                        B  C  N  O  F  Ne
+    Na Mg       [--------- d-block ---------]    Al Si P  S  Cl Ar
+    K  Ca       Sc Ti V  Cr Mn Fe Co Ni Cu Zn    Ga Ge As Se Br Kr
+    Rb Sr       Y  Zr Nb Mo Tc Ru Rh Pd Ag Cd    In Sn Sb Te I  Xe
+    Cs Ba       *  Hf Ta W  Re Os Ir Pt Au Hg    Tl Pb Bi Po At Rn
+    Fr Ra      \#  Rf Db Sg Bh Hs Mt Ds Rg Cn    Nh Fl Mc Lv Ts Og
+
+    Uue    ] --- hypothetical
+
+                    [--------------- f-block ---------------]
+      *Lanthanides: Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu
+     \#Actinides:   Th Pa U  Np Pu Am Cm Bk Cf Es Fm Md No Lr
+---
+```
+
+#### Logo
+
+```shell
+$ periodic --logo
+ ____           _           _ _
+|  _ \ ___ _ __(_) ___   __| (_) ___
+| |_) / _ \ '__| |/ _ \ / _` | |/ __|
+|  __/  __/ |  | | (_) | (_| | | (__
+|_|   \___|_|  |_|\___/ \__,_|_|\___|
+```
