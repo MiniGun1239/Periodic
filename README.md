@@ -81,7 +81,7 @@ Not Supported
 ### Video demonstration:  
 
 * [Demonstration](https://youtu.be/nsVz-hxfFCM)
-* [How to Download](https://youtu.be/rQDhgZfQ-Zk)
+* [How to Download](https://youtu.be/MZtM6yARDFw)
 
 ## Building from Source
 
