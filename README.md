@@ -53,7 +53,14 @@ None (Unless you want to build it from source)
 #### Linux
 Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/releases)
 
-Or run this:
+>**Note:** The name of the executable will be "periodic-*", where * is the version number, 
+> remember to type the full name when executing, or rename it from "periodic-*" to "periodic"
+
+> If you downloaded, most likely it is in the downloads directory, 
+> so either move it to the home directory (/home/user/) or run ```cd ~/Downloads``` before
+> doing ```./periodic```
+
+Or download from command line, like this:
 
 ```shell
 curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0 -o periodic
@@ -71,7 +78,10 @@ Done!, add to path to run anywhere or run from home like:
 
 Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/releases)
 
-or run this:
+>**Note:** The name of the executable will be "periodic-*", where * is the version number,
+> remember to type the full name when executing, or rename it from "periodic-*" to "periodic"
+
+Or download from command line, like this:
 
 ```shell
 curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0 -o periodic
