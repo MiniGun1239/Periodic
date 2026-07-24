@@ -141,6 +141,28 @@ Not Supported
 
 ### [Examples](https://github.com/MiniGun1239/Periodic/tree/main/Examples)
 
+```shell
+$ periodic --help
+Usage: periodic [OPTIONS] [QUERY]
+
+Arguments:
+  [QUERY]  
+
+Options:
+  -n, --name                                       Print name of element
+  -s, --symbol                                     Print symbol of element
+  -m, --atomic-mass                                Print mass of element
+  -e, --electron <ELECTRON>                        Print info related to electrons
+  -p, --physical-properties <PHYSICAL_PROPERTIES>  Print information about physical properties
+  -g, --grouping <GROUPING>                        Print grouping info
+  -t, --table                                      Print periodic table
+      --sort <SORT>                                Sort elements
+  -r, --reverse                                    Reverses sort order
+      --logo                                       Swag
+  -h, --help                                       Print help
+  -V, --version                                    Print version
+```
+
 #### Name
 
 ```shell
