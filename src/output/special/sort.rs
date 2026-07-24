@@ -34,7 +34,7 @@ fn out_name(reverse: bool) {
     });
 
     for (num, name) in names {
-        println!("{}. {}", num, name);
+        println!("{} ({})", name, num);
     }
 }
 
@@ -52,7 +52,7 @@ fn out_symbol(reverse: bool) {
     });
 
     for (num, symbol) in symbols {
-        println!("{}: {}", num, symbol);
+        println!("{} ({})", num, symbol);
     }
 }
 
@@ -70,7 +70,7 @@ fn out_number(reverse: bool) {
     });
 
     for (num, name) in numbers {
-        println!("{}: {}", num, name);
+        println!("{}. {}", num, name);
     }
 }
 
@@ -88,7 +88,7 @@ fn out_mass(reverse: bool) {
     });
 
     for (name, mass) in mass {
-        println!("{}: {}", name, mass);
+        println!("{}: ({}u)", name, mass);
     }
 }
 
