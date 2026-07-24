@@ -63,7 +63,7 @@ Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/rel
 Or download from command line, like this:
 
 ```shell
-curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0 -o periodic
+curl -L https://github.com/MiniGun1239/Periodic/releases/download/Release/periodic-1.0.0-x86_64-Linux -o periodic
 chmod +x periodic
 ```
 
