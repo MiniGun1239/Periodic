@@ -139,7 +139,6 @@ Not Supported
 > Coded and tested in Arch Linux, should work in any distro.
 
 
-## Examples
+### Examples
 
-#### Name:  
-```periodic 1 -n``` outputs ```hydrogen```
+[Examples/](https://github.com/MiniGun1239/Periodic/tree/main/Examples)
