@@ -19,15 +19,36 @@ Fun chem app ("Fun" in very, very deep quotes, and very subjective)
 
 *   **Lookup:** Gives some basic information about elements like:
     *   Name
+        * ```periodic <atomic_number> -n``` outputs name of element
     *   Atomic Mass
+        * ```periodic <atomic_number> -m``` outputs mass of element
     *   Electron Configuration
+        * ```periodic <atomic_number> -e [Options]```
+        * Options:
+          * Bohr Config
+          * Quantum Config
+          * Semantic Config
+          * Valency
+          * First Ionization Energy
+          * Electron Affinity
     *   Grouping info
+        * ```periodic <atomic_number> -g [Options]```
+        * Options:
+          * Category
+          * Group
+          * Period
+          * Block
     *   Physical Properties at STP
+        * ```periodic <atomic_number> -p [Options]```
+        * Options:
+          * Boiling Point
+          * Melting Point
+          * Density
+          * Phase
 *   **Display the periodic table**
 *   **Sort elements based on properties:**
     *   Alphabetical Order of name and symbol _(and inverse alphabetical order)_
     *   Increasing Order in Mass, Density, Boiling point, Melting point _(and decreasing)_
-    *   etc
 
 ## Stack
 
