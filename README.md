@@ -54,7 +54,7 @@ None (Unless you want to build it from source)
 Get the latest release from [GitHub](https://github.com/MiniGun1239/Periodic/releases)
 
 >**Note:** The name of the executable will be "periodic-*", where * is the version number, 
-> remember to type the full name when executing, or rename it from "periodic-*" to "periodic"
+> remember to type the full name when executing like ```./periodic-* -V``` , or rename it from "periodic-*" to "periodic"
 
 > If you downloaded, most likely it is in the downloads directory, 
 > so either move it to the home directory (/home/user/) or run ```cd ~/Downloads``` before
@@ -76,7 +76,7 @@ Done!, add to path to run anywhere or run from home like:
 
 #### Windows
 
-Not Supported yet
+Not Supported
 
 ### Video demonstration:  
 
@@ -95,7 +95,13 @@ Not Supported yet
    ```
    
 3. **Build**:  
-   Idk how... i just used the IDE, someone help
+   Idk how... i just used the IDE, someone help,
+
+   Probably just run:
+
+   ```shell
+   cargo build --release
+   ```
 
 4. **Done!:**  
    Now test the binary with: 
@@ -107,4 +113,4 @@ Not Supported yet
 *   **[![Me✨✨](https://img.shields.io/badge/GitHub-MiniGun1239-orange?style=plastic)](https://www.github.com/MiniGun1239)**
 *   **TBA (no one else yet 🥹)**
 
-> Coded and tested in Arch Linux, should work in any distro and probably windows as well.
+> Coded and tested in Arch Linux, should work in any distro.
